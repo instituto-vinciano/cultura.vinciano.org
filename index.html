@@ -9,27 +9,25 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
+      <button class="menu-toggle">&#9776;</button>
       <div class="logo">
         <a href="/"><img src="assets/images/logo.png" alt="Paraíba ponto Cultural - logo" class="site-logo"></a>
       </div>
-      <!-- Botão hambúrguer -->
-      <button class="menu-toggle">☰</button>
       <nav class="main-nav">
         <ul>
           <li><a href="/">INÍCIO</a></li>
-          <li class="has-submenu">
-            <a href="#">TEMAS</a>
+          <li><a href="/agenda">AGENDA</a></li>
+          <li class="has-submenu"><a href="#">TEMAS</a>
             <ul class="submenu">
-              <li><a href="/temas/literatura">LITERATURA</a></li>
-              <li><a href="/temas/musica">MÚSICA</a></li>
-              <li><a href="/temas/danca">TEATRO</a></li>
-              <li><a href="/temas/teatro">CINEMA</a></li>
-              <li><a href="/temas/cinema">PINTURA</a></li>
-              <li><a href="/temas/artesanato">ARTESANATO</a></li>
+              <li><a href="/literatura">Literatura</a></li>
+              <li><a href="/musica">Música</a></li>
+              <li><a href="/danca">Dança</a></li>
+              <li><a href="/teatro">Teatro</a></li>
+              <li><a href="/cinema">Cinema</a></li>
+              <li><a href="/artesanato">Artesanato</a></li>
             </ul>
           </li>
-          <li><a href="/noticias">PARALAXE</a></li>
-          <li><a href="/videos">AGENDA</a></li>
+          <li><a href="/paralaxe">PARALAXE</a></li>
           <li><a href="/sobre">SOBRE</a></li>
         </ul>
       </nav>
@@ -138,29 +136,21 @@
     </div>
   </footer>
 
-  <!-- JS para menu hambúrguer -->
   <script>
-  // Toggle do menu sanduíche no mobile
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.main-nav');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-
-  // Clique para abrir/fechar submenus no mobile
-  document.querySelectorAll('.has-submenu > a').forEach(item => {
-    item.addEventListener('click', function(e){
-      e.preventDefault(); // não segue o link #
-      const submenu = this.nextElementSibling;
-      if(submenu.style.display === 'block'){
-        submenu.style.display = 'none';
-      } else {
-        submenu.style.display = 'block';
-      }
+    // Toggle menu principal (hambúrguer)
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
     });
-  });
-</script>
 
+    // Toggle submenus mobile
+    document.querySelectorAll('.has-submenu > a').forEach(item => {
+      item.addEventListener('click', function(e){
+        e.preventDefault();
+        this.parentElement.classList.toggle('active'); // mostra/esconde submenu
+      });
+    });
+  </script>
 </body>
 </html>
