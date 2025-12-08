@@ -43,10 +43,10 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 }
 
 .main-nav a {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
-    font-size: 16px;      /* mantém o valor antigo */
-    color: #777777;       /* mantém o valor antigo */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* volta ao valor antigo */
+    font-weight: 600;
+    font-size: 16px;
+    color: #777777;
     text-decoration: none;
     letter-spacing: 1px;
     transition: color 0.3s;
@@ -57,13 +57,13 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 }
 
 .main-nav ul li {
-  position: relative; /* necessário para o submenu */
+  position: relative; /* necessário para submenu */
 }
 
 .main-nav ul li .submenu {
-  display: none;         /* escondido por padrão */
-  position: absolute;    /* fica sobre os outros elementos */
-  top: 100%;             /* logo abaixo do item principal */
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
   background: #fff;
   list-style: none;
@@ -73,7 +73,7 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 }
 
 .main-nav ul li:hover .submenu {
-  display: block;        /* mostra ao passar o mouse */
+  display: block;
 }
 
 .submenu li {
@@ -85,13 +85,14 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
   font-weight: 500;
   font-size: 14px;
 }
+
 .submenu li a:hover {
   color: #333;
 }
 
 /* Botão hambúrguer */
 .menu-toggle {
-    display: none; /* só aparece no mobile */
+    display: none;
     font-size: 28px;
     background: none;
     border: none;
@@ -139,7 +140,7 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
     .main-nav ul {
         flex-direction: column;
         gap: 10px;
-        display: none; /* escondido por padrão */
+        display: none;
         width: 100%;
         text-align: center;
         background: #fff;
@@ -148,10 +149,26 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
     }
 
     .main-nav.active ul {
-        display: flex; /* exibe quando o JS adiciona 'active' */
+        display: flex;
     }
 
     .menu-toggle {
         display: block;
+    }
+
+    /* Submenu mobile dentro do fluxo */
+    .main-nav ul li .submenu {
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+
+    .main-nav ul li:hover .submenu {
+        display: none;
+    }
+
+    .main-nav ul li.active .submenu {
+        display: flex;
+        flex-direction: column;
     }
 }
