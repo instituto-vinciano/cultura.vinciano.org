@@ -16,12 +16,16 @@ body{font-family: "Helvetica Neue", Arial, sans-serif;margin:0;color:#222;line-h
 }
 .site-logo {
     height: 70px;          /* ← altura IDEAL no desktop */
-    margin-right: 40px;
+    margin-right: 0;
+    margin-bottom: 10px
     width: auto;
 }
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.header-inner{display:flex;flex-direction: column;align-items:center;justify-content:center;padding:14px 0}
 .logo-img{height:56px}
-.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.main-nav ul {
+    flex-direction: row; /* mantém os links em linha */
+    gap: 18px; /* espaçamento entre links */
+}
 .main-nav a{text-decoration:none;color:#111;font-weight:600}
 
 /* Layout grid */
