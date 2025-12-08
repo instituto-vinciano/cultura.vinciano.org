@@ -1,4 +1,4 @@
-/* Base CSS inspired by Opera Mundi structure — fully static, no dependencies */
+/* Base CSS inspirado no seu original */
 * { box-sizing: border-box; }
 body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222; line-height: 1.6; background: #f7f7f7; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 18px; }
@@ -56,16 +56,6 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
     color: #333333;
 }
 
-/* Botão hambúrguer */
-.menu-toggle {
-    display: none; /* só aparece no mobile */
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
 /* Layout grid */
 .main-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; padding: 26px 0; }
 .main-col { min-height: 400px; padding-right: 6px; }
@@ -103,23 +93,14 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
     .logo-img { height: 48px; }
     .footer-columns { flex-direction: column; }
 
-    /* Menu mobile */
+    /* Ajustes do menu para caber no celular */
     .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-        display: none; /* escondido por padrão */
-        width: 100%;
-        text-align: center;
-        background: #fff;
-        padding: 10px 0;
-        border-top: 1px solid #ddd;
+        gap: 10px;        /* menos espaço entre links */
+        flex-wrap: wrap;   /* permite quebrar linha se necessário */
+        justify-content: center;
     }
 
-    .main-nav.active ul {
-        display: flex; /* exibe quando o JS adiciona 'active' */
-    }
-
-    .menu-toggle {
-        display: block;
+    .main-nav a {
+        font-size: 14px;  /* fonte menor no celular */
     }
 }
