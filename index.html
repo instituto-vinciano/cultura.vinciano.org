@@ -12,6 +12,8 @@
       <div class="logo">
         <a href="/"><img src="assets/images/logo.png" alt="Paraíba ponto Cultural - logo" class="site-logo"></a>
       </div>
+      <!-- Botão hambúrguer -->
+      <button class="menu-toggle">☰</button>
       <nav class="main-nav">
         <ul>
           <li><a href="/">INÍCIO</a></li>
@@ -126,5 +128,15 @@
       <p>© 2025 Instituto Vinciano — Paraíba Ponto Cultural</p>
     </div>
   </footer>
+
+  <!-- JS para menu hambúrguer -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
