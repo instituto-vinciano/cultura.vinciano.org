@@ -19,7 +19,7 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 
 .header-inner {
     display: flex;
-    flex-direction: column; /* empilha logo e menu no desktop */
+    flex-direction: column; /* empilha logo e menu */
     align-items: center;
     justify-content: center;
     padding: 14px 0;
@@ -43,8 +43,8 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 }
 
 .main-nav a {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* volta ao valor antigo */
+    font-weight: 600;
     font-size: 16px;
     color: #777777;
     text-decoration: none;
@@ -57,42 +57,42 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
 }
 
 .main-nav ul li {
-    position: relative; /* necessário para o submenu */
+  position: relative; /* necessário para submenu */
 }
 
 .main-nav ul li .submenu {
-    display: none;         /* escondido por padrão */
-    position: absolute;    /* fica sobre os outros elementos */
-    top: 100%;             /* logo abaixo do item principal */
-    left: 0;
-    background: #fff;
-    list-style: none;
-    padding: 10px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 4px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
 }
 
 .main-nav ul li:hover .submenu {
-    display: block;        /* mostra ao passar o mouse */
+  display: block;
 }
 
 .submenu li {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
 .submenu li a {
-    color: #777;
-    font-weight: 500;
-    font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .submenu li a:hover {
-    color: #333;
+  color: #333;
 }
 
 /* Botão hambúrguer */
 .menu-toggle {
-    display: none; /* só aparece no mobile */
+    display: none;
     font-size: 28px;
     background: none;
     border: none;
@@ -136,37 +136,39 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #222;
     .logo-img { height: 48px; }
     .footer-columns { flex-direction: column; }
 
-    /* Header mobile: logo e botão na mesma linha */
-    .header-inner {
-        flex-direction: row;             /* linha em vez de coluna */
-        justify-content: space-between;  /* logo à esquerda, botão à direita */
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .site-logo {
-        margin: 0;                       /* remove margem inferior */
-        height: 48px;                     /* altura reduzida no mobile */
-    }
-
-    /* Menu sanduíche */
-    .menu-toggle {
-        display: block;
-    }
-
+    /* Menu mobile */
     .main-nav ul {
         flex-direction: column;
         gap: 10px;
-        display: none;                   /* escondido por padrão */
+        display: none;
         width: 100%;
         text-align: center;
         background: #fff;
         padding: 10px 0;
         border-top: 1px solid #ddd;
-        margin-top: 10px;                /* distância entre linha logo+botão e menu */
     }
 
     .main-nav.active ul {
-        display: flex;                   /* exibe quando JS adiciona 'active' */
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Submenu mobile dentro do fluxo */
+    .main-nav ul li .submenu {
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+
+    .main-nav ul li:hover .submenu {
+        display: none;
+    }
+
+    .main-nav ul li.active .submenu {
+        display: flex;
+        flex-direction: column;
     }
 }
