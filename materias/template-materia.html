@@ -176,49 +176,8 @@
 
 <body>
 
-  <!-- =====================================================
-       CABEÇALHO
-       Mantém a mesma identidade da página principal.
-       Como esta página está dentro de /materias/, os caminhos
-       começam com ../
-       ===================================================== -->
-  <header class="site-header">
-    <div class="main-header container">
-      <a class="brand" href="../index.html" aria-label="Paraíba ponto Cultural — página inicial">
-        <img src="../assets/logo-ppc.png" alt="Paraíba ponto Cultural">
-      </a>
-
-      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
-        <span class="sr-only">Abrir menu</span>
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
-        <a class="nav-item" href="../index.html">Início</a>
-        <a class="nav-item current" href="../index.html#ultimas">Matérias</a>
-
-        <div class="nav-item-wrap">
-          <a class="nav-item nav-item-themes" href="../index.html#temas" aria-haspopup="true" aria-expanded="false">
-            Temas <span class="nav-arrow" aria-hidden="true">⌄</span>
-          </a>
-
-          <div class="nav-submenu" role="menu">
-            <a href="../index.html#patrimonio" role="menuitem">Patrimônio</a>
-            <a href="../index.html#literatura" role="menuitem">Literatura</a>
-            <a href="../index.html#artes" role="menuitem">Artes</a>
-            <a href="../index.html#audiovisual" role="menuitem">Audiovisual</a>
-            <a href="../index.html#lugares" role="menuitem">Lugares</a>
-            <a href="../index.html#personagens" role="menuitem">Personagens</a>
-          </div>
-        </div>
-
-        <a class="nav-item" href="../index.html#artigos-title">Artigos</a>
-        <a class="nav-item" href="../index.html#codice">Códice</a>
-        <a class="nav-item" href="../index.html#sobre">Sobre</a>
-      </nav>
-    </div>
-  </header>
-
+  <!-- Cabeçalho único do portal, gerado por componentes/layout.js -->
+  <div id="site-header"></div>
 
   <main class="materia-page">
 
@@ -345,85 +304,9 @@
 
   </main>
 
+  <!-- Rodapé único do portal, gerado por componentes/layout.js -->
+  <div id="site-footer"></div>
 
-  <!-- =====================================================
-       RODAPÉ
-       Repete o mesmo modelo institucional da página principal.
-       ===================================================== -->
-  <footer class="site-footer" id="contato">
-    <div class="container footer-main">
-      <div class="footer-brand">
-        <img src="../assets/logo-dark.png" alt="Paraíba ponto Cultural">
-        <p>
-          Um projeto editorial do Instituto Vinciano de Artes e Ciências
-          dedicado à cultura, memória e patrimônio paraibanos.
-        </p>
-      </div>
-
-      <nav class="footer-nav" aria-label="Navegação do rodapé">
-        <div>
-          <h2>Portal</h2>
-          <a href="../index.html">Início</a>
-          <a href="../index.html#ultimas">Matérias</a>
-          <a href="../index.html#artigos-title">Artigos</a>
-          <a href="../index.html#codice">Códice Parahyba</a>
-        </div>
-
-        <div>
-          <h2>Temas</h2>
-          <a href="../index.html#patrimonio">Patrimônio</a>
-          <a href="../index.html#literatura">Literatura</a>
-          <a href="../index.html#audiovisual">Audiovisual</a>
-          <a href="../index.html#artes">Artes</a>
-        </div>
-
-        <div>
-          <h2>Institucional</h2>
-          <a href="../index.html#sobre">Sobre</a>
-          <a href="../index.html#contato">Contato</a>
-          <a href="https://vinciano.org">Instituto Vinciano</a>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>Paraíba ponto Cultural</span>
-      <span>© 2026 Instituto Vinciano de Artes e Ciências</span>
-    </div>
-  </footer>
-
-
-  <!--
-    Script mínimo apenas para o menu responsivo desta página.
-    Não carrega home.js e portanto não tenta renderizar a página inicial.
-  -->
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('#primary-nav');
-
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const themes = document.querySelector('.final-nav .nav-item-themes');
-      const submenu = document.querySelector('.final-nav .nav-submenu');
-
-      if (!themes || !submenu) return;
-
-      themes.addEventListener('click', (event) => {
-        if (window.matchMedia('(max-width: 900px)').matches) {
-          event.preventDefault();
-          const open = submenu.style.display === 'block';
-          submenu.style.display = open ? 'none' : 'block';
-          themes.setAttribute('aria-expanded', open ? 'false' : 'true');
-        }
-      });
-    });
-  </script>
-
+  <script src="../componentes/layout.js"></script>
 </body>
 </html>

@@ -1,40 +1,3 @@
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#primary-nav');
-const dropdown = document.querySelector('.nav-dropdown');
-const dropdownButton = document.querySelector('.nav-dropdown-button');
-
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-  });
-}
-
-if (dropdown && dropdownButton) {
-  dropdownButton.addEventListener('click', () => {
-    const open = dropdown.classList.toggle('open');
-    dropdownButton.setAttribute('aria-expanded', String(open));
-  });
-}
-
-
-// FINAL PROVISÓRIA: submenu Temas em telas estreitas.
-document.addEventListener('DOMContentLoaded', () => {
-  const themes = document.querySelector('.final-nav .nav-item-themes');
-  const submenu = document.querySelector('.final-nav .nav-submenu');
-  if (!themes || !submenu) return;
-
-  themes.addEventListener('click', (event) => {
-    if (window.matchMedia('(max-width: 900px)').matches) {
-      event.preventDefault();
-      const open = submenu.style.display === 'block';
-      submenu.style.display = open ? 'none' : 'block';
-      themes.setAttribute('aria-expanded', open ? 'false' : 'true');
-    }
-  });
-});
-
-
 /* ==========================================================
    PPC — renderização do conteúdo editorial da página inicial
    Os dados ficam em dados/home.js.
@@ -96,10 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
     el.innerHTML = (HOME.ultimas || []).map(u => `
       <article class="latest-item">
         <a href="${url(u.link)}">
-          ${u.categoria ? `<span>${esc(u.categoria)}</span>` : ""}
+          ${u.categoria ? `<span class="category-link">${esc(u.categoria)}</span>` : ""}
           <h2>${esc(u.titulo)}</h2>
           ${u.resumo ? `<p>${esc(u.resumo)}</p>` : ""}
-          ${u.hora ? `<time>${esc(u.hora)}</time>` : ""}
+          ${u.data ? `<time>${esc(u.data)}${u.hora ? ` · ${esc(u.hora)}` : ""}</time>` : (u.hora ? `<time>${esc(u.hora)}</time>` : "")}
         </a>
       </article>
     `).join("");

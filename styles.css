@@ -1842,23 +1842,55 @@ body{
 }
 
 /* ==========================================================
-   CORREÇÃO MOBILE — menu sanduíche
-   Mantém o menu final oculto em telas estreitas e o exibe
-   somente quando o botão adiciona a classe .open.
+   REVISÃO ESTRUTURAL — SETEMBRO 2026
+
+   Mobile:
+   - sanduíche e logo permanecem na mesma linha;
+   - sanduíche à esquerda;
+   - logo centralizado;
+   - navegação oculta até o toque no sanduíche.
+
+   Desktop: nenhuma alteração de composição.
    ========================================================== */
 @media (max-width:900px){
+  .main-header{
+    grid-template-columns:48px minmax(0,1fr) 48px !important;
+    grid-template-rows:auto auto !important;
+    gap:0 !important;
+    align-items:center !important;
+    position:relative;
+  }
+
+  .main-header .brand{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    justify-self:center !important;
+    width:min(100%,230px) !important;
+    margin:0 !important;
+  }
+
+  .main-header .menu-toggle{
+    display:block !important;
+    grid-column:1 !important;
+    grid-row:1 !important;
+    justify-self:start !important;
+    align-self:center !important;
+    margin:0 !important;
+  }
+
   .primary-nav.final-nav{
     display:none !important;
-    grid-column:1 / -1;
-    width:100%;
+    grid-column:1 / -1 !important;
+    grid-row:2 !important;
+    width:100% !important;
     margin-left:0 !important;
     flex-direction:column !important;
     align-items:stretch !important;
     justify-content:flex-start !important;
     align-self:auto !important;
     border-top:1px solid var(--line);
-    padding:4px 0 14px;
-    overflow:visible;
+    padding:4px 0 14px !important;
+    overflow:visible !important;
   }
 
   .primary-nav.final-nav.open{
@@ -1866,7 +1898,7 @@ body{
   }
 
   .primary-nav.final-nav .nav-item{
-    width:100%;
+    width:100% !important;
     min-height:auto !important;
     justify-content:flex-start !important;
     padding:10px 0 !important;
@@ -1875,5 +1907,14 @@ body{
   .primary-nav.final-nav .nav-item::after{
     display:none !important;
   }
+}
+
+/* Data das notas de Últimas: discreta, mas sempre visível. */
+.latest-item time{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-family:var(--font-ui);
+  font-size:.71rem;
 }
 

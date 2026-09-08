@@ -1,0 +1,19 @@
+LAYOUT COMPARTILHADO — PARAÍBA PONTO CULTURAL
+
+O arquivo layout.js contém o cabeçalho e o rodapé do portal.
+
+A home e o template de matéria usam:
+    <div id="site-header"></div>
+    <div id="site-footer"></div>
+
+Ao alterar cabeçalho ou rodapé no layout.js, a mudança passa a valer
+automaticamente para todas as páginas que carregam esse componente.
+
+Nas páginas da raiz:
+    <script src="componentes/layout.js"></script>
+
+Nas páginas dentro de /materias/:
+    <script src="../componentes/layout.js"></script>
+
+Não usa fetch(), portanto continua funcionando ao abrir o HTML localmente
+com duplo clique.

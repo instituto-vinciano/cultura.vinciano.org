@@ -56,30 +56,34 @@ const HOME = {
   ],
   "ultimas": [
     {
-      "categoria": "",
+      "categoria": "Audiovisual",
       "titulo": "Comunicurtas abre inscrições para sua 21ª edição",
       "resumo": "Mostras competitivas recebem inscrições gratuitas até 30 de setembro. O Festival acontece de 24 a 29 de novembro, em Campina Grande.",
+      "data": "7 de setembro de 2026",
       "hora": "",
       "link": "materias/2026-09-07-comunicurtas.html"
     },
     {
-      "categoria": "",
+      "categoria": "Cultura pop",
       "titulo": "Imagineland On the Road retorna a Campina Grande em setembro",
       "resumo": "Evento será realizado de 25 a 27 de setembro no Centro de Convenções de Campina Grande. O primeiro dia terá entrada gratuita para estudantes de instituições públicas.",
+      "data": "7 de setembro de 2026",
       "hora": "",
       "link": "materias/2026-09-07-cultura-local-02.html"
     },
     {
-      "categoria": "",
+      "categoria": "Cinema",
       "titulo": "MAC promove ciclo de cinema dedicado à Grécia em setembro",
       "resumo": "Sessões gratuitas acontecem às sextas-feiras, às 19h, com exibição de filmes e debates sobre mito, história e cultura.",
+      "data": "7 de setembro de 2026",
       "hora": "",
       "link": "materias/2026-09-07-cultura-local-03.html"
     },
     {
-      "categoria": "",
+      "categoria": "Cultura popular",
       "titulo": "25ª Feira Cultural de Chã da Pia acontece em Areia",
       "resumo": "Evento acontece no dia 13 de setembro e reúne o trabalho das loiceiras, artesanato, gastronomia e saberes tradicionais da comunidade.",
+      "data": "7 de setembro de 2026",
       "hora": "",
       "link": "materias/2026-09-07-cultura-local-04.html"
     }

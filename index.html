@@ -8,41 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="main-header container">
-      <a class="brand" href="#" aria-label="Paraíba ponto Cultural — página inicial">
-        <img src="assets/logo-ppc.png" alt="Paraíba ponto Cultural">
-      </a>
-
-      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
-        <span class="sr-only">Abrir menu</span>
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
-        <a class="nav-item current" href="#">Início</a>
-        <a class="nav-item" href="#ultimas">Matérias</a>
-
-        <div class="nav-item-wrap">
-          <a class="nav-item nav-item-themes" href="#temas" aria-haspopup="true" aria-expanded="false">
-            Temas <span class="nav-arrow" aria-hidden="true">⌄</span>
-          </a>
-          <div class="nav-submenu" role="menu">
-            <a href="#patrimonio" role="menuitem">Patrimônio</a>
-            <a href="#literatura" role="menuitem">Literatura</a>
-            <a href="#artes" role="menuitem">Artes</a>
-            <a href="#audiovisual" role="menuitem">Audiovisual</a>
-            <a href="#lugares" role="menuitem">Lugares</a>
-            <a href="#personagens" role="menuitem">Personagens</a>
-          </div>
-        </div>
-
-        <a class="nav-item" href="#artigos-title">Artigos</a>
-        <a class="nav-item" href="#codice">Códice</a>
-        <a class="nav-item" href="#sobre">Sobre</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main>
     <section class="front-page container" aria-label="Abertura editorial">
@@ -132,43 +98,9 @@ FIM COLUNAS -->
 FIM CÓDICE -->
   </main>
 
-  <footer class="site-footer" id="contato">
-      <div class="container footer-main">
-        <div class="footer-brand">
-          <img src="assets/logo-dark.png" alt="Paraíba ponto Cultural">
-          <p>Um projeto editorial do Instituto Vinciano de Artes e Ciências dedicado à cultura, memória e patrimônio paraibanos.</p>
-        </div>
+  <div id="site-footer"></div>
 
-        <nav class="footer-nav" aria-label="Navegação do rodapé">
-          <div>
-            <h2>Portal</h2>
-            <a href="#">Início</a>
-            <a href="#">Matérias</a>
-            <a href="#artigos-title">Artigos</a>
-            <a href="#codice">Códice Parahyba</a>
-          </div>
-          <div>
-            <h2>Temas</h2>
-            <a href="#patrimonio">Patrimônio</a>
-            <a href="#literatura">Literatura</a>
-            <a href="#audiovisual">Audiovisual</a>
-            <a href="#artes">Artes</a>
-          </div>
-          <div>
-            <h2>Institucional</h2>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-            <a href="https://vinciano.org">Instituto Vinciano</a>
-          </div>
-        </nav>
-      </div>
-
-      <div class="container footer-bottom">
-        <span>Paraíba ponto Cultural</span>
-        <span>© 2026 Instituto Vinciano de Artes e Ciências</span>
-      </div>
-    </footer>
-
+  <script src="componentes/layout.js"></script>
   <script src="dados/home.js"></script>
   <script src="script.js"></script>
 </body>
