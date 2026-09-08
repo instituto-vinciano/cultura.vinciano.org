@@ -1840,3 +1840,40 @@ body{
     border-bottom:1px solid var(--line, #d9d9d9);
   }
 }
+
+/* ==========================================================
+   CORREÇÃO MOBILE — menu sanduíche
+   Mantém o menu final oculto em telas estreitas e o exibe
+   somente quando o botão adiciona a classe .open.
+   ========================================================== */
+@media (max-width:900px){
+  .primary-nav.final-nav{
+    display:none !important;
+    grid-column:1 / -1;
+    width:100%;
+    margin-left:0 !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    justify-content:flex-start !important;
+    align-self:auto !important;
+    border-top:1px solid var(--line);
+    padding:4px 0 14px;
+    overflow:visible;
+  }
+
+  .primary-nav.final-nav.open{
+    display:flex !important;
+  }
+
+  .primary-nav.final-nav .nav-item{
+    width:100%;
+    min-height:auto !important;
+    justify-content:flex-start !important;
+    padding:10px 0 !important;
+  }
+
+  .primary-nav.final-nav .nav-item::after{
+    display:none !important;
+  }
+}
+
