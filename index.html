@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paraíba ponto Cultural — cultura, patrimônio, literatura, artes e audiovisual.">
+  <title>Paraíba ponto Cultural</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="main-header container">
+      <a class="brand" href="#" aria-label="Paraíba ponto Cultural — página inicial">
+        <img src="assets/logo-ppc.png" alt="Paraíba ponto Cultural">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Abrir menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
+        <a class="nav-item current" href="#">Início</a>
+        <a class="nav-item" href="#ultimas">Matérias</a>
+
+        <div class="nav-item-wrap">
+          <a class="nav-item nav-item-themes" href="#temas" aria-haspopup="true" aria-expanded="false">
+            Temas <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </a>
+          <div class="nav-submenu" role="menu">
+            <a href="#patrimonio" role="menuitem">Patrimônio</a>
+            <a href="#literatura" role="menuitem">Literatura</a>
+            <a href="#artes" role="menuitem">Artes</a>
+            <a href="#audiovisual" role="menuitem">Audiovisual</a>
+            <a href="#lugares" role="menuitem">Lugares</a>
+            <a href="#personagens" role="menuitem">Personagens</a>
+          </div>
+        </div>
+
+        <a class="nav-item" href="#artigos-title">Artigos</a>
+        <a class="nav-item" href="#codice">Códice</a>
+        <a class="nav-item" href="#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="front-page container" aria-label="Abertura editorial">
+      <div class="front-grid">
+
+        <aside class="front-left" aria-label="Destaques"><div class="column-title">Destaques</div>
+<div id="home-destaques"></div>
+</aside>
+
+        <article class="main-story" id="home-manchete" aria-label="Manchete"></article>
+
+        <aside class="front-right" aria-label="Últimas matérias"><div class="latest-title">Últimas</div>
+<div id="home-ultimas"></div>
+<a class="latest-all" href="#">Todas as matérias →</a>
+</aside>
+      </div>
+    </section>
+
+    <section class="container text-strip" aria-label="Outras matérias">
+<div id="home-em-pauta" class="home-em-pauta-grid"></div>
+</section>
+
+    <!-- ESPECIAL — DESATIVADO NO LANÇAMENTO
+<section class="special-wrap" aria-label="Especial">
+      <div class="container special">
+        <div class="special-label">Especial</div>
+        <div class="special-image">
+          <img src="assets/cordel.svg" alt="">
+        </div>
+        <div class="special-copy">
+          <span class="category-link">Literatura & patrimônio</span>
+          <h2>O cordel em circulação</h2>
+          <p>Uma área flexível para coberturas, séries, ensaios fotográficos ou projetos que mereçam presença temporária na página inicial.</p>
+          <a href="#">Acompanhar especial →</a>
+        </div>
+      </div>
+    </section>
+FIM ESPECIAL -->
+
+    <!-- COLUNAS — DESATIVADO NO LANÇAMENTO
+<section class="container articles-section" aria-labelledby="artigos-title">
+      <div class="articles-heading">
+        <h2 id="artigos-title">Artigos</h2>
+        <a href="#">Ver todos →</a>
+      </div>
+
+      <div class="articles-grid">
+        <article class="article-card">
+          <a href="#">
+            <div class="author">Maria de Lourdes Silva</div>
+            <h3>Patrimônio cultural também se constrói no cotidiano</h3>
+            <p>Memória, pertencimento e práticas locais na construção de uma identidade cultural.</p>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a href="#">
+            <div class="author">João Batista Nunes</div>
+            <h3>O lugar da cultura popular na cidade contemporânea</h3>
+            <p>Reflexões sobre permanência, transformação e circulação de saberes.</p>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a href="#">
+            <div class="author">Ana Paula Ferreira</div>
+            <h3>Literatura paraibana entre memória e renovação</h3>
+            <p>Autores, leitores e novas formas de presença pública da produção literária.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+FIM COLUNAS -->
+
+    <!-- CÓDICE — DESATIVADO NO LANÇAMENTO
+<section id="codice" class="codice-wrap">
+      <div class="container codice">
+        <div class="codice-mark">Códice<br><strong>Parahyba</strong></div>
+        <div class="codice-copy">
+          <p class="eyebrow">Cadernos do Paraíba ponto Cultural</p>
+          <h2>Códice Parahyba</h2>
+          <p>Matérias selecionadas em formato editorial para leitura, compartilhamento e preservação.</p>
+          <a class="button" href="#">Conheça o projeto →</a>
+        </div>
+      </div>
+    </section>
+FIM CÓDICE -->
+  </main>
+
+  <footer class="site-footer" id="contato">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <img src="assets/logo-dark.png" alt="Paraíba ponto Cultural">
+          <p>Um projeto editorial do Instituto Vinciano de Artes e Ciências dedicado à cultura, memória e patrimônio paraibanos.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <div>
+            <h2>Portal</h2>
+            <a href="#">Início</a>
+            <a href="#">Matérias</a>
+            <a href="#artigos-title">Artigos</a>
+            <a href="#codice">Códice Parahyba</a>
+          </div>
+          <div>
+            <h2>Temas</h2>
+            <a href="#patrimonio">Patrimônio</a>
+            <a href="#literatura">Literatura</a>
+            <a href="#audiovisual">Audiovisual</a>
+            <a href="#artes">Artes</a>
+          </div>
+          <div>
+            <h2>Institucional</h2>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="https://vinciano.org">Instituto Vinciano</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>Paraíba ponto Cultural</span>
+        <span>© 2026 Instituto Vinciano de Artes e Ciências</span>
+      </div>
+    </footer>
+
+  <script src="dados/home.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

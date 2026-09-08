@@ -1,0 +1,48 @@
+PARAÍBA PONTO CULTURAL — ESTRUTURA EDITORIAL
+
+1) HOME
+Edite:
+    dados/home.js
+
+A home é apenas a seleção do momento.
+Uma matéria pode aparecer como Manchete, Destaque, Última ou Em pauta.
+
+2) MATÉRIAS
+Cada matéria tem um arquivo permanente em:
+    materias/
+
+Convenção:
+    AAAA-MM-DD-titulo-curto.html
+
+Exemplo:
+    2026-09-07-estacao-velha.html
+
+Não renomeie o arquivo depois de publicado.
+Quando a matéria sair da home, ela continua existindo no mesmo endereço.
+
+3) IMAGENS DA MATÉRIA
+Use uma pasta com o mesmo nome-base:
+    assets/materias/AAAA-MM-DD-titulo-curto/
+
+Exemplo:
+    assets/materias/2026-09-07-estacao-velha/
+
+Nomes internos sugeridos:
+    capa.jpg
+    foto-01.jpg
+    foto-02.jpg
+    documento-01.jpg
+
+4) CÓDICE PARAHYBA
+No futuro, uma matéria poderá deixar de aparecer nas listagens correntes do portal
+e ser incorporada ao Códice. Ainda assim, o endereço original da matéria pode ser
+mantido para preservar links, QR codes e referências já publicadas.
+
+5) IMPORTANTE
+As páginas individuais de matéria NÃO foram automatizadas.
+Você pode editar cada HTML livremente e criar composições diferentes conforme
+a necessidade de cada conteúdo.
+
+6) TESTE LOCAL
+Descompacte o site e abra index.html com duplo clique.
+Não é necessário servidor local.

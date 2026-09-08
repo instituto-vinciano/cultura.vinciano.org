@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDITE ESTES CAMPOS -->
+  <title>TÍTULO DA MATÉRIA | Paraíba ponto Cultural</title>
+  <meta name="description" content="RESUMO CURTO DA MATÉRIA">
+
+  <!-- Reaproveita toda a identidade visual da página principal -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!--
+    Estilos exclusivos das páginas de matéria.
+    Permanecem aqui para não mexer no styles.css da página principal.
+  -->
+  <style>
+    .materia-page{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 46px 24px 80px;
+    }
+
+    .materia-header{
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    .materia-category{
+      display: inline-block;
+      margin-bottom: 12px;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .80rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .materia-title{
+      margin: 0 0 18px;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(2.4rem, 5vw, 4.7rem);
+      line-height: .98;
+      letter-spacing: -.02em;
+    }
+
+    .materia-summary{
+      max-width: 820px;
+      margin: 0 0 22px;
+      color: #444;
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+      line-height: 1.5;
+    }
+
+    .materia-meta{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+    }
+
+    .materia-cover{
+      margin: 30px auto 38px;
+    }
+
+    .materia-cover img,
+    .materia-body img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .materia-cover figcaption,
+    .materia-body figcaption{
+      margin-top: 8px;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .82rem;
+      line-height: 1.4;
+    }
+
+    .materia-body{
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .materia-body p{
+      margin: 0 0 1.35em;
+    }
+
+    .materia-body h2{
+      margin: 1.8em 0 .65em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.08;
+    }
+
+    .materia-body h3{
+      margin: 1.6em 0 .55em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.15;
+    }
+
+    .materia-body figure{
+      margin: 32px 0;
+    }
+
+    .materia-body blockquote{
+      margin: 34px 0;
+      padding: 4px 0 4px 22px;
+      border-left: 4px solid #111;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .materia-body .wide{
+      width: min(980px, calc(100vw - 48px));
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .materia-body .video{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 34px 0;
+      background: #111;
+    }
+
+    .materia-body .video iframe{
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .materia-footer-note{
+      max-width: 760px;
+      margin: 48px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px){
+      .materia-page{
+        padding: 32px 18px 60px;
+      }
+
+      .materia-title{
+        font-size: clamp(2.1rem, 12vw, 3.4rem);
+      }
+
+      .materia-body{
+        font-size: 1.02rem;
+      }
+
+      .materia-body .wide{
+        width: calc(100vw - 36px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       CABEÇALHO
+       Mantém a mesma identidade da página principal.
+       Como esta página está dentro de /materias/, os caminhos
+       começam com ../
+       ===================================================== -->
+  <header class="site-header">
+    <div class="main-header container">
+      <a class="brand" href="../index.html" aria-label="Paraíba ponto Cultural — página inicial">
+        <img src="../assets/logo-ppc.png" alt="Paraíba ponto Cultural">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Abrir menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
+        <a class="nav-item" href="../index.html">Início</a>
+        <a class="nav-item current" href="../index.html#ultimas">Matérias</a>
+
+        <div class="nav-item-wrap">
+          <a class="nav-item nav-item-themes" href="../index.html#temas" aria-haspopup="true" aria-expanded="false">
+            Temas <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </a>
+
+          <div class="nav-submenu" role="menu">
+            <a href="../index.html#patrimonio" role="menuitem">Patrimônio</a>
+            <a href="../index.html#literatura" role="menuitem">Literatura</a>
+            <a href="../index.html#artes" role="menuitem">Artes</a>
+            <a href="../index.html#audiovisual" role="menuitem">Audiovisual</a>
+            <a href="../index.html#lugares" role="menuitem">Lugares</a>
+            <a href="../index.html#personagens" role="menuitem">Personagens</a>
+          </div>
+        </div>
+
+        <a class="nav-item" href="../index.html#artigos-title">Artigos</a>
+        <a class="nav-item" href="../index.html#codice">Códice</a>
+        <a class="nav-item" href="../index.html#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="materia-page">
+
+    <!-- =====================================================
+         CABEÇALHO EDITORIAL DA MATÉRIA
+         ===================================================== -->
+    <header class="materia-header">
+      <div class="materia-category">CATEGORIA</div>
+
+      <h1 class="materia-title">
+        Título da matéria
+      </h1>
+
+      <p class="materia-summary">
+        Resumo ou linha fina da matéria. Use aqui duas ou três frases curtas
+        que apresentem o assunto sem repetir simplesmente o título.
+      </p>
+
+      <div class="materia-meta">
+        <span>Por NOME DO AUTOR</span>
+        <time datetime="2026-09-08">8 de setembro de 2026</time>
+        <span>Campina Grande, PB</span>
+      </div>
+    </header>
+
+
+    <!-- =====================================================
+         IMAGEM DE ABERTURA — OPCIONAL
+         Crie para cada matéria uma pasta própria, por exemplo:
+         ../assets/materias/2026-09-08-titulo-curto/capa.jpg
+         ===================================================== -->
+    <figure class="materia-cover">
+      <img
+        src="../assets/materias/AAAA-MM-DD-titulo-curto/capa.jpg"
+        alt="DESCRIÇÃO DA IMAGEM"
+      >
+      <figcaption>
+        Legenda da fotografia. Foto: NOME / Paraíba ponto Cultural
+      </figcaption>
+    </figure>
+
+
+    <!-- =====================================================
+         CORPO DA MATÉRIA
+
+         Esta é a parte livre. Você pode apagar, mover ou duplicar
+         qualquer bloco abaixo. A matéria não precisa sempre começar
+         com foto, nem ter a mesma composição das demais.
+         ===================================================== -->
+    <article class="materia-body">
+
+      <p>
+        Primeiro parágrafo da matéria.
+      </p>
+
+      <p>
+        Segundo parágrafo. Continue o texto normalmente.
+      </p>
+
+      <h2>Intertítulo opcional</h2>
+
+      <p>
+        Novo bloco de texto.
+      </p>
+
+      <!-- FOTO DENTRO DO TEXTO -->
+      <!--
+      <figure>
+        <img
+          src="../assets/materias/AAAA-MM-DD-titulo-curto/foto-01.jpg"
+          alt="DESCRIÇÃO DA IMAGEM"
+          loading="lazy"
+        >
+        <figcaption>
+          Legenda da fotografia. Foto: NOME / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+      -->
+
+      <!-- FOTO MAIS LARGA QUE A COLUNA DE TEXTO -->
+      <!--
+      <figure class="wide">
+        <img
+          src="../assets/materias/AAAA-MM-DD-titulo-curto/foto-02.jpg"
+          alt="DESCRIÇÃO DA IMAGEM"
+          loading="lazy"
+        >
+        <figcaption>
+          Legenda da fotografia.
+        </figcaption>
+      </figure>
+      -->
+
+      <!-- CITAÇÃO / DESTAQUE -->
+      <!--
+      <blockquote>
+        Trecho de entrevista ou frase que mereça destaque visual.
+      </blockquote>
+      -->
+
+      <!-- VÍDEO EMBUTIDO — OPCIONAL -->
+      <!--
+      <div class="video">
+        <iframe
+          src="URL-DO-VIDEO-INCORPORADO"
+          title="Título do vídeo"
+          allowfullscreen
+        ></iframe>
+      </div>
+      -->
+
+      <p>
+        Parágrafo final ou continuação da matéria.
+      </p>
+
+    </article>
+
+
+    <!-- NOTA FINAL / CRÉDITOS — OPCIONAL -->
+    <div class="materia-footer-note">
+      <strong>Paraíba ponto Cultural</strong> — projeto editorial do
+      Instituto Vinciano de Artes e Ciências.
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       RODAPÉ
+       Repete o mesmo modelo institucional da página principal.
+       ===================================================== -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="../assets/logo-dark.png" alt="Paraíba ponto Cultural">
+        <p>
+          Um projeto editorial do Instituto Vinciano de Artes e Ciências
+          dedicado à cultura, memória e patrimônio paraibanos.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <div>
+          <h2>Portal</h2>
+          <a href="../index.html">Início</a>
+          <a href="../index.html#ultimas">Matérias</a>
+          <a href="../index.html#artigos-title">Artigos</a>
+          <a href="../index.html#codice">Códice Parahyba</a>
+        </div>
+
+        <div>
+          <h2>Temas</h2>
+          <a href="../index.html#patrimonio">Patrimônio</a>
+          <a href="../index.html#literatura">Literatura</a>
+          <a href="../index.html#audiovisual">Audiovisual</a>
+          <a href="../index.html#artes">Artes</a>
+        </div>
+
+        <div>
+          <h2>Institucional</h2>
+          <a href="../index.html#sobre">Sobre</a>
+          <a href="../index.html#contato">Contato</a>
+          <a href="https://vinciano.org">Instituto Vinciano</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>Paraíba ponto Cultural</span>
+      <span>© 2026 Instituto Vinciano de Artes e Ciências</span>
+    </div>
+  </footer>
+
+
+  <!--
+    Script mínimo apenas para o menu responsivo desta página.
+    Não carrega home.js e portanto não tenta renderizar a página inicial.
+  -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#primary-nav');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const themes = document.querySelector('.final-nav .nav-item-themes');
+      const submenu = document.querySelector('.final-nav .nav-submenu');
+
+      if (!themes || !submenu) return;
+
+      themes.addEventListener('click', (event) => {
+        if (window.matchMedia('(max-width: 900px)').matches) {
+          event.preventDefault();
+          const open = submenu.style.display === 'block';
+          submenu.style.display = open ? 'none' : 'block';
+          themes.setAttribute('aria-expanded', open ? 'false' : 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

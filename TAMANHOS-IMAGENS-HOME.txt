@@ -1,0 +1,74 @@
+PARAÍBA PONTO CULTURAL — IMAGENS DA HOME
+
+A home usa 7 imagens fixas.
+
+1) MANCHEte
+Arquivo:
+    assets/home/manchete.jpg
+
+Uso:
+    imagem principal da matéria central
+
+Proporção recomendada:
+    horizontal, aproximadamente 16:9
+
+Sugestão de tamanho:
+    1600 x 900 px
+ou
+    1200 x 675 px
+
+2) DESTAQUES
+Arquivos:
+    assets/home/destaque-01.jpg
+    assets/home/destaque-02.jpg
+
+Uso:
+    duas matérias da coluna Destaques
+
+Proporção recomendada:
+    horizontal, próxima de 16:9
+
+Sugestão de tamanho:
+    1200 x 675 px
+ou
+    1000 x 563 px
+
+3) EM PAUTA
+Arquivos:
+    assets/home/pauta-01.jpg
+    assets/home/pauta-02.jpg
+    assets/home/pauta-03.jpg
+    assets/home/pauta-04.jpg
+
+Uso:
+    quatro chamadas horizontais abaixo da abertura
+
+Proporção recomendada:
+    horizontal e baixa; 16:9 funciona bem
+
+Sugestão de tamanho:
+    1000 x 563 px
+ou
+    800 x 450 px
+
+OBSERVAÇÕES
+- Não é obrigatório usar exatamente esses pixels.
+- O mais importante é manter boa resolução e proporção horizontal.
+- O CSS usa object-fit: cover para manter o layout estável.
+- Evite imagens muito verticais ou muito pequenas.
+- Se você substituir um arquivo mantendo exatamente o mesmo nome e extensão,
+  não precisa alterar dados/home.js.
+
+
+PADRÃO DEFINITIVO DE FORMATO
+As 7 imagens editoriais da home usam JPG:
+    manchete.jpg
+    destaque-01.jpg
+    destaque-02.jpg
+    pauta-01.jpg
+    pauta-02.jpg
+    pauta-03.jpg
+    pauta-04.jpg
+
+Para atualizar uma posição, basta substituir o JPG correspondente por outro
+arquivo JPG com exatamente o mesmo nome.

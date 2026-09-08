@@ -1,0 +1,42 @@
+PARAÍBA PONTO CULTURAL — COMO EDITAR A HOME
+
+A partir desta versão, você NÃO precisa procurar os textos no index.html.
+
+ARQUIVO QUE VOCÊ DEVE EDITAR:
+    dados/home.js
+
+COMO TESTAR:
+1. Descompacte todo o ZIP em uma pasta.
+2. Dê dois cliques em index.html.
+3. A página deve abrir normalmente no navegador.
+4. Abra dados/home.js no Bloco de Notas.
+5. Troque, por exemplo, o texto depois de "titulo": em "manchete".
+6. Salve home.js.
+7. Volte ao navegador e pressione F5.
+8. O novo texto deverá aparecer.
+
+IMPORTANTE:
+- Não apague aspas, vírgulas, chaves { } ou colchetes [ ].
+- Para usar aspas dentro de um texto, prefira aspas simples ou escreva \"
+- Imagens ficam na pasta assets.
+- Para trocar imagem, copie a nova imagem para assets e altere o campo "imagem".
+  Exemplo:
+      "imagem": "assets/minha-foto.jpg"
+- O campo "link" será o endereço da matéria quando criarmos as páginas internas.
+
+ORGANIZAÇÃO DO ARQUIVO:
+    manchete    = 1 matéria principal
+    destaques   = 2 matérias
+    ultimas     = 4 matérias
+    em_pauta    = 4 matérias com imagem, título e resumo
+
+TOTAL: 11 matérias.
+
+O HTML continua responsável pela estrutura visual.
+O arquivo dados/home.js contém o conteúdo editorial.
+O script.js pega os dados de home.js e coloca cada conteúdo no lugar correto.
+
+
+OBSERVAÇÃO DA V2
+A formatação visual das categorias, datas e horários agora é preservada pelo
+próprio script. Você continua editando somente dados/home.js.
