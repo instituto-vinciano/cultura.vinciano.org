@@ -1,0 +1,26 @@
+NOVO PADRÃO DAS MATÉRIAS — SEM ALTERAR A HOME
+
+Nada deste pacote substitui:
+- index.html da home
+- styles.css
+- componentes/layout.js
+- script.js
+- dados/home.js
+
+Acrescente:
+1. materias/layout-materia.js
+2. materias/2026-08-22-literatura-cordel/index.html
+
+Estrutura:
+materias/
+├── layout-materia.js
+└── 2026-08-22-literatura-cordel/
+    ├── index.html
+    ├── capa.jpg
+    ├── foto-01.jpg
+    └── ...
+
+As imagens próprias da matéria ficam na mesma pasta do index.html.
+
+O arquivo template-index.html dentro da pasta da matéria é apenas uma cópia
+genérica de referência para futuras matérias; ele não precisa ser publicado.

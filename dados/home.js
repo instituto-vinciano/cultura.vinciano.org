@@ -35,7 +35,7 @@ const HOME = {
     "titulo": "Jornada aborda literatura de cordel e xilogravura em Campina Grande",
     "resumo": "Realizada na UFCG, a quarta edição do evento reuniu pesquisadores, cordelistas e artistas do Brasil e de Portugal em conferências, mesas-redondas, oficinas, minicursos e grupos de trabalho dedicados à literatura de cordel e à xilogravura.",
     "imagem": "assets/home/manchete.jpg",
-    "link": "materias/2026-08-22-literatura-cordel.html",
+    "link": "materias/2026-08-22-literatura-cordel/index.html",
     "data": "22 de agosto de 2026"
   },
   "destaques": [

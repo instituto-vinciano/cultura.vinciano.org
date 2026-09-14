@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDITE ESTES CAMPOS -->
+  <title>Jornada de Cordel e Xilogravura | Paraíba ponto Cultural</title>
+  <meta name="description" content="A IV Jornada Internacional de Literatura de Cordel e Xilogravura reuniu na UFCG pesquisadores, cordelistas e artistas em três dias de debates, oficinas e circulação de saberes.">
+
+  <!-- Reaproveita toda a identidade visual da página principal -->
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!--
+    Estilos exclusivos das páginas de matéria.
+    Permanecem aqui para não mexer no styles.css da página principal.
+  -->
+  <style>
+    .materia-page{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 46px 24px 80px;
+    }
+
+    .materia-header{
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    .materia-category{
+      display: inline-block;
+      margin-bottom: 12px;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .80rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .materia-title{
+      margin: 0 0 18px;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(2.4rem, 5vw, 4.7rem);
+      line-height: .98;
+      letter-spacing: -.02em;
+    }
+
+    .materia-summary{
+      max-width: 820px;
+      margin: 0 0 22px;
+      color: #444;
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+      line-height: 1.5;
+    }
+
+    .materia-meta{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+    }
+
+    .materia-cover{
+      margin: 30px auto 38px;
+    }
+
+    .materia-cover img,
+    .materia-body img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .materia-cover figcaption,
+    .materia-body figcaption{
+      margin-top: 8px;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .82rem;
+      line-height: 1.4;
+    }
+
+    .materia-body{
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .materia-body p{
+      margin: 0 0 1.35em;
+    }
+
+    .materia-body h2{
+      margin: 1.8em 0 .65em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.08;
+    }
+
+    .materia-body h3{
+      margin: 1.6em 0 .55em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.15;
+    }
+
+    .materia-body figure{
+      margin: 32px 0;
+    }
+
+    .materia-body blockquote{
+      margin: 34px 0;
+      padding: 4px 0 4px 22px;
+      border-left: 4px solid #111;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .materia-body .wide{
+      width: min(980px, calc(100vw - 48px));
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .materia-body .video{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 34px 0;
+      background: #111;
+    }
+
+    .materia-body .video iframe{
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .materia-footer-note{
+      max-width: 760px;
+      margin: 48px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px){
+      .materia-page{
+        padding: 32px 18px 60px;
+      }
+
+      .materia-title{
+        font-size: clamp(2.1rem, 12vw, 3.4rem);
+      }
+
+      .materia-body{
+        font-size: 1.02rem;
+      }
+
+      .materia-body .wide{
+        width: calc(100vw - 36px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho das matérias, gerado por ../layout-materia.js -->
+  <div id="site-header"></div>
+
+  <main class="materia-page">
+
+    <!-- =====================================================
+         CABEÇALHO EDITORIAL DA MATÉRIA
+         ===================================================== -->
+    <header class="materia-header">
+      <div class="materia-category">LITERATURA DE CORDEL</div>
+
+      <h1 class="materia-title">
+        Jornada aborda literatura de cordel e xilogravura em Campina Grande
+      </h1>
+
+      <p class="materia-summary">
+        Realizada na UFCG, a quarta edição do encontro reuniu pesquisadores, cordelistas e artistas
+        em três dias de atividades que aproximaram produção cultural, pesquisa acadêmica,
+        educação e preservação da memória.
+      </p>
+
+      <div class="materia-meta">
+        <span>Por Carlos Alberto</span>
+        <time datetime="2026-08-22">22 de agosto de 2026</time>
+        <span>Campina Grande, PB</span>
+      </div>
+    </header>
+
+
+    <!-- =====================================================
+         IMAGEM DE ABERTURA — OPCIONAL
+         Crie para cada matéria uma pasta própria, por exemplo:
+         capa.jpg
+         ===================================================== -->
+    <figure class="materia-cover">
+      <img
+        src="capa.jpg"
+        alt="Registro da IV Jornada Internacional de Literatura de Cordel e Xilogravura na UFCG"
+      >
+      <figcaption>
+        IV Jornada Internacional de Literatura de Cordel e Xilogravura, realizada na UFCG.
+        Foto: Carlos Alberto / Paraíba ponto Cultural
+      </figcaption>
+    </figure>
+
+
+    <!-- =====================================================
+         CORPO DA MATÉRIA
+
+         Esta é a parte livre. Você pode apagar, mover ou duplicar
+         qualquer bloco abaixo. A matéria não precisa sempre começar
+         com foto, nem ter a mesma composição das demais.
+         ===================================================== -->
+    <article class="materia-body">
+
+      <p>
+        Durante três dias, Campina Grande tornou-se ponto de encontro de pesquisadores, poetas,
+        cordelistas, xilogravuristas, professores e estudantes dedicados a duas manifestações
+        profundamente ligadas à cultura popular nordestina. Realizada de 19 a 21 de agosto,
+        na Universidade Federal de Campina Grande (UFCG), a IV Jornada Internacional de Literatura
+        de Cordel e Xilogravura reuniu conferências, mesas-redondas, grupos de trabalho, minicursos,
+        oficinas e atividades de circulação da produção artística.
+      </p>
+
+      <p>
+        A realização da Jornada na Paraíba deu continuidade a um percurso iniciado fora do Brasil.
+        Segundo o professor Hélder Pinheiro, da UFCG e coordenador do encontro em Campina Grande,
+        a primeira edição ocorreu em Lisboa, seguida por Serra Talhada, em Pernambuco, e Fortaleza,
+        no Ceará. Em Campina Grande, o evento ganhou dois grupos de trabalho destinados à apresentação
+        de pesquisas, além de conferências, mesas-redondas, minicursos, oficinas e espaço para
+        circulação dos folhetos produzidos pelos participantes.
+      </p>
+
+      <p>
+        A escolha de Campina Grande para sediar a quarta edição também se relaciona à trajetória
+        da cidade como centro de divulgação da literatura popular. A apresentação oficial do evento
+        recorda nomes como Manuel Camilo dos Santos, Manuel Monteiro, Antônio Lucena, Toin da
+        Mulatinha e Maria Godelivie, além da presença contemporânea de poetas e poetisas em atividade,
+        entre elas as Marias do Cordel.
+      </p>
+
+      <p>
+        O vínculo aparece também no ambiente acadêmico. O Programa de Pós-Graduação em Linguagem
+        e Ensino da UFCG (PPGLE/UFCG), apoiador da Jornada, é apresentado pela organização como o
+        único programa de pós-graduação que possui uma disciplina denominada
+        <strong>Literatura de Cordel</strong>, além de reunir pesquisas voltadas para essa área
+        da cultura.
+      </p>
+
+      <p>
+        A pesquisadora Joseilda <strong>[SOBRENOME A CONFERIR]</strong>, que iniciou sua trajetória
+        acadêmica na própria UFCG, recordou as Jornadas Internacionais de Poéticas da Oralidade,
+        criadas em Campina Grande em 2012, e destacou a importância do encontro entre pesquisadores
+        e detentores dos saberes e fazeres das tradições orais.
+      </p>
+
+      <h2>Entre a universidade e a cultura popular</h2>
+
+      <figure class="wide">
+        <img src="foto-01.jpg" alt="Atividade da Jornada na UFCG" loading="lazy">
+        <figcaption>
+          Pesquisadores, artistas e estudantes durante a programação da Jornada.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        A presença do cordel e da xilogravura no ambiente universitário atravessou os três dias de
+        programação. A vice-reitora da UFCG, professora Fernanda
+        <strong>[SOBRENOME A CONFERIR]</strong>, ressaltou a importância dessas manifestações para
+        aproximar a universidade da sociedade e abrir espaço acadêmico para expressões vinculadas
+        à cultura popular.
+      </p>
+
+      <p>
+        O professor José Mário da Silva, da UFCG e membro das academias de Letras de Campina Grande
+        e Paraibana de Letras, chamou atenção para outra dimensão dessa aproximação. Em sua avaliação,
+        literatura erudita e literatura popular não devem ser colocadas em planos hierárquicos
+        diferentes. São manifestações distintas, mas capazes de compartilhar dimensões estéticas
+        e humanas.
+      </p>
+
+      <!-- FOTO 1 --> visão geral da Jornada / auditório / mesa.
+      <figure class="wide">
+        <img
+          src="foto-01.jpg"
+          alt="Participantes da IV Jornada Internacional de Literatura de Cordel e Xilogravura na UFCG"
+          loading="lazy"
+        >
+        <figcaption>
+          Registro da IV Jornada Internacional de Literatura de Cordel e Xilogravura.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        Essa diversidade também apareceu nos próprios objetos de pesquisa apresentados durante a
+        Jornada. O cordel foi discutido não apenas como patrimônio cultural ou gênero literário,
+        mas como produção que acompanha transformações da sociedade e incorpora novos sujeitos,
+        temas e formas de representação.
+      </p>
+
+      <p>
+        Fábio Mário da Silva, professor da Universidade Federal Rural de Pernambuco (UFRPE),
+        participou da própria trajetória de formação da Jornada, iniciada em Lisboa. Em Campina Grande,
+        apresentou uma discussão sobre a presença de temas LGBTQIA+ na literatura de cordel,
+        incluindo tanto discursos de apoio quanto representações homofóbicas. Para o pesquisador,
+        cordel e xilogravura constituem também um mapa das diferentes identidades nordestinas e
+        de suas transformações.
+      </p>
+
+      <p>
+        A representação da população negra foi abordada pelo jornalista e pesquisador Alberto Perdigão.
+        Ele recuperou uma tradição de representações racistas presentes historicamente nos folhetos
+        para discutir mudanças ocorridas nas últimas décadas. Em sua análise, o cordel contemporâneo
+        passou também a servir como espaço para temas relacionados à negritude que durante muito tempo
+        tiveram pouca presença na grande mídia e até no livro didático, incluindo escravidão, racismo,
+        personagens e heróis negros.
+      </p>
+
+      <p>
+        As mulheres e as transformações de sua presença no cordel constituíram outro eixo do encontro.
+        O GT <strong>Vozes Femininas da Literatura de Cordel Contemporânea</strong>, coordenado por
+        Verônica Sobral e Adriana Vicente, recebeu 18 trabalhos dedicados à contribuição e às
+        diferentes vozes femininas nesse campo.
+      </p>
+
+      <p>
+        Entre essas discussões estava a pesquisa apresentada pela professora Socorro Pinheiro,
+        da Universidade Estadual do Ceará (UECE), sobre autoria feminina e temática erótica.
+        Seu trabalho parte da constatação de que as mulheres produzem cordéis sobre uma variedade
+        de assuntos que inclui também o erotismo, ampliando os temas e perspectivas encontrados
+        na produção contemporânea.
+      </p>
+
+      <p>
+        Outras abordagens ampliaram ainda mais esse quadro, incluindo pesquisas sobre a representação
+        dos povos da floresta e de outros grupos sociais. Stélio Torquato Lima observou uma
+        transformação especialmente a partir dos anos 1990: grupos tradicionalmente representados
+        de maneira estereotipada passaram progressivamente da condição de objetos da representação
+        para sujeitos de fala dentro da própria produção em cordel.
+      </p>
+
+      <h2>Cordel que ensina ciência, preserva histórias e fala do presente</h2>
+
+      <figure>
+        <img src="foto-02.jpg" alt="Atividade relacionada ao cordel, educação e ciência durante a Jornada" loading="lazy">
+        <figcaption>
+          A dimensão educacional integrou as discussões e experiências apresentadas durante o encontro.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        A dimensão educacional teve espaço próprio na programação da Jornada. O GT 1,
+        <strong>“Literatura de cordel e ensino: vivências e propostas”</strong>, foi dedicado a
+        pesquisas, experiências e sugestões de trabalho com folhetos de cordel no contexto escolar,
+        tanto no Ensino Básico quanto no Ensino Superior.
+      </p>
+
+      <p>
+        A proposta do grupo de trabalho parte do reconhecimento crescente da literatura de cordel
+        em documentos oficiais, como a Base Nacional Comum Curricular (BNCC) e propostas curriculares
+        dos estados, ao mesmo tempo em que aponta a necessidade de maior divulgação das experiências
+        de leitura e de utilização dos folhetos efetivamente realizadas em sala de aula.
+      </p>
+
+      <p>
+        Entre as experiências apresentadas durante o encontro, José Nildo Lima, o J. Lima Cordelista,
+        falou sobre o projeto <strong>Cordel Pedagógico nas aulas de ciência</strong>, desenvolvido
+        na Universidade Estadual da Paraíba (UEPB). A iniciativa reúne estudantes de diferentes áreas e leva às escolas oficinas
+        de criação e declamação, além de trabalhos produzidos a partir do diálogo entre poesia e
+        conhecimento científico.
+      </p>
+
+      <p>
+        Uma das experiências surgidas dessa trajetória é <em>As aventuras de Siba e Pitelin,
+        Multiverso da Física e Outros Cordéis</em>, conjunto de 13 cordéis que aborda conteúdos como
+        sistemas de medidas, leis de Newton, energia elétrica, ondas e óptica. Para José Nildo,
+        a participação em encontros como a Jornada também permite aproximar extensão universitária,
+        produção artística e pesquisa acadêmica.
+      </p>
+
+      <p>
+        A diversidade temática pôde ser observada também entre autores que levaram sua produção
+        para Campina Grande. Do Piauí, Maria <strong>[NOME COMPLETO A CONFERIR]</strong> apresentou
+        trabalhos relacionados a mulheres, patrimônio e educação ambiental. Entre seus temas aparecem
+        a trajetória da arqueóloga Niède Guidon, a preservação dos rios piauienses e a defesa do
+        Cajueiro-Rei, utilizando o cordel como instrumento de conscientização sobre a proteção do
+        meio ambiente.
+      </p>
+
+      <p>
+        Em outra fala, a cordelista, que completa 25 anos desde a publicação de seu primeiro folheto,
+        descreveu seu processo de criação como uma maneira de “ficcionar dentro do real”, combinando
+        personagens históricos, poesia, memória e elementos da cultura do Piauí.
+      </p>
+
+      <p>
+        A professora Andréa de Lima Andrade, da UFRPE, trouxe outra possibilidade de leitura ao
+        aproximar literatura de cordel e “escritas de si”. Participante da Jornada desde sua segunda
+        edição, a pesquisadora apresentou em Campina Grande uma abordagem que utiliza estudos
+        autobiográficos para explorar novos caminhos de investigação da literatura de cordel.
+      </p>
+
+      <h2>Xilogravura para além do folheto</h2>
+
+      <figure class="wide">
+        <img src="foto-03.jpg" alt="Xilogravura durante a Jornada" loading="lazy">
+        <figcaption>
+          A xilogravura integrou a programação como prática e como linguagem artística.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        Embora historicamente associada às capas da literatura de cordel, a xilogravura apareceu
+        na Jornada também como linguagem artística com trajetória e possibilidades próprias.
+      </p>
+
+      <p>
+        O artista Josafá de Orós chamou atenção justamente para essa autonomia ao discutir a
+        xilogravura não apenas como ilustração associada ao cordel, mas como produção inserida no
+        campo das artes visuais. Sua participação incluiu ainda a apresentação de trabalhos em que
+        a técnica foi aplicada a outros suportes e produtos.
+      </p>
+
+      <p>
+        A prática da xilogravura também integrou a programação. Em uma oficina realizada durante
+        o encontro, os participantes acompanharam diferentes etapas do processo, da preparação das
+        matrizes à impressão das imagens. O responsável pela atividade
+        <strong>[NOME A CONFERIR]</strong> participou ainda de mesa-redonda dedicada à xilogravura
+        e apresentou trabalhos nos quais histórias relacionadas ao cangaço foram transformadas em
+        cordéis.
+      </p>
+
+      <p>
+        A presença da xilogravura como produção autônoma reforçou uma característica observada ao
+        longo da Jornada: embora cordel e xilogravura compartilhem uma extensa história de
+        aproximações, ambos constituem campos capazes de estabelecer relações próprias com a
+        literatura, as artes visuais, a educação e a memória.
+      </p>
+
+      <!-- FOTO 5 --> cordelistas, livros, feira ou circulação de publicações.
+      <figure>
+        <img
+          src="foto-05.jpg"
+          alt="Cordéis e produções apresentadas durante a Jornada"
+          loading="lazy"
+        >
+        <figcaption>
+          A circulação de folhetos e outras produções integrou a programação do encontro.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <h2>Memória e novos projetos</h2>
+
+      <figure>
+        <img src="foto-04.jpg" alt="Participante da Jornada durante atividade dedicada à memória e aos novos projetos" loading="lazy">
+        <figcaption>
+          Memória, preservação e novas iniciativas estiveram entre os temas abordados na Jornada.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        A conferência de abertura apresentou uma iniciativa que leva algumas dessas questões para
+        além dos três dias de programação. A professora Francisca Pereira dos Santos
+        <strong>[IDENTIFICAÇÃO A CONFERIR]</strong>, da Universidade Federal do Cariri (UFCA),
+        apresentou a recém-criada <strong>Escola Brasileira de Literatura de Cordel e Xilogravura</strong>,
+        lançada em 30 de junho de 2026.
+      </p>
+
+      <p>
+        A iniciativa reúne diferentes frentes de atuação e começa por uma questão fundamental:
+        a memória. Entre seus primeiros trabalhos está o tratamento técnico de acervos existentes
+        na UFCA para disponibilização à pesquisa, incluindo coleções relacionadas à literatura
+        de cordel e à autoria feminina.
+      </p>
+
+      <p>
+        A Escola prevê ainda publicação de folhetos, oficinas, cantoria, xilogravura, ações de
+        economia criativa e um censo nacional envolvendo diferentes segmentos. Segundo a pesquisadora,
+        o projeto pretende também reativar “territórios de memória”, incluindo bibliotecas, museus,
+        escolas e outros espaços que mantêm acervos ainda pouco explorados.
+      </p>
+
+      <p>
+        A proposta dialoga com uma Jornada em que a preservação da tradição apareceu acompanhada
+        pela produção de novos conhecimentos. O encontro reuniu pessoas que pesquisam manifestações
+        históricas, mas também artistas que continuam produzindo, pesquisadores que reavaliam
+        representações sociais e educadores que experimentam novas utilizações do cordel.
+      </p>
+
+      <h2>Entre escrita e oralidade</h2>
+
+      <figure class="wide">
+        <img src="foto-05.jpg" alt="Atividade de encerramento da Jornada" loading="lazy">
+        <figcaption>
+          A oralidade e a escrita estiveram entre os eixos de reflexão do encontro.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        No encerramento da programação, Aderaldo Luciano apresentou a conferência
+        <strong>“O Juazeiro Poético Nordestino” [TÍTULO EXATO A CONFERIR]</strong>. A imagem do
+        juazeiro serviu para reunir diferentes formas da criação nordestina e relacionar a história
+        da escrita às tradições da oralidade. Em sua fala, o pesquisador destacou a presença, na
+        Jornada, de participantes provenientes de diferentes estados do Nordeste e situou essas
+        produções dentro de uma construção cultural compartilhada.
+      </p>
+
+      <p>
+        Entre a conferência de abertura e o encerramento, os três dias realizados em Campina Grande
+        mostraram um campo que preserva vínculos profundos com a tradição sem permanecer limitado
+        a ela. Mulheres, população negra, povos tradicionais, diversidade sexual, educação, ciência,
+        meio ambiente e memória apareceram entre os temas encontrados nas pesquisas e produções
+        apresentadas.
+      </p>
+
+      <p>
+        Ao receber a quarta edição da Jornada, Campina Grande passou a integrar um percurso iniciado
+        em Lisboa e continuado em diferentes cidades do Nordeste. Mais do que reunir estudos sobre
+        cordel e xilogravura, o encontro colocou lado a lado quem pesquisa, quem ensina e quem
+        continua produzindo essas manifestações.
+      </p>
+
+      <p>
+        Durante três dias, universidade e cultura popular não estiveram em lados diferentes de uma
+        fronteira: encontraram-se no mesmo espaço, entre folhetos, matrizes, pesquisas, oficinas,
+        imagens e versos.
+      </p>
+
+
+      <h2>Assista à cobertura</h2>
+
+      <p>
+        A cobertura audiovisual da IV Jornada Internacional de Literatura de Cordel e Xilogravura
+        foi realizada pelo <strong>Vincine</strong>, núcleo audiovisual do Instituto Vinciano de
+        Artes e Ciências. A playlist reúne depoimentos, entrevistas e registros produzidos durante
+        o evento.
+      </p>
+
+      <div class="video">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/videoseries?si=ri5-oA3B7SMOIq4r&amp;list=PLRrNPADfWI7A" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+          web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+
+    </article>
+
+
+    <!-- NOTA FINAL / CRÉDITOS — OPCIONAL -->
+    <div class="materia-footer-note">
+      <p>
+        <strong>Créditos</strong><br>
+        Reportagem e cobertura jornalística: Paraíba ponto Cultural.<br>
+        Registro e produção audiovisual: Vincine / Instituto Vinciano de Artes e Ciências.
+      </p>
+
+      <p>
+        <strong>Direitos e reprodução</strong><br>
+        Os textos e materiais de produção própria desta cobertura podem ser reproduzidos e
+        compartilhados, integral ou parcialmente, desde que preservada sua integridade e sejam
+        indicadas de forma clara a autoria e a fonte original. Fotografias, ilustrações, vídeos
+        e outros conteúdos creditados a terceiros permanecem sujeitos aos direitos de seus
+        respectivos autores.
+      </p>
+
+      <p>
+        <strong>Paraíba ponto Cultural</strong> — projeto editorial do
+        Instituto Vinciano de Artes e Ciências.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Rodapé das matérias, gerado por ../layout-materia.js -->
+  <div id="site-footer"></div>
+
+  <script src="../layout-materia.js"></script>
+</body>
+</html>

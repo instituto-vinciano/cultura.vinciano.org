@@ -9,7 +9,7 @@
   <meta name="description" content="RESUMO CURTO DA MATÉRIA">
 
   <!-- Reaproveita toda a identidade visual da página principal -->
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../../styles.css">
 
   <!--
     Estilos exclusivos das páginas de matéria.
@@ -176,7 +176,7 @@
 
 <body>
 
-  <!-- Cabeçalho único do portal, gerado por componentes/layout.js -->
+  <!-- Cabeçalho das matérias, gerado por ../layout-materia.js -->
   <div id="site-header"></div>
 
   <main class="materia-page">
@@ -188,18 +188,17 @@
       <div class="materia-category">CATEGORIA</div>
 
       <h1 class="materia-title">
-        Título da matéria
+        TÍTULO DA MATÉRIA
       </h1>
 
       <p class="materia-summary">
-        Resumo ou linha fina da matéria. Use aqui duas ou três frases curtas
-        que apresentem o assunto sem repetir simplesmente o título.
+        RESUMO CURTO DA MATÉRIA.
       </p>
 
       <div class="materia-meta">
-        <span>Por NOME DO AUTOR</span>
-        <time datetime="2026-09-08">8 de setembro de 2026</time>
-        <span>Campina Grande, PB</span>
+        <span>Por AUTOR</span>
+        <time datetime="AAAA-MM-DD">DATA</time>
+        <span>LOCAL</span>
       </div>
     </header>
 
@@ -207,11 +206,11 @@
     <!-- =====================================================
          IMAGEM DE ABERTURA — OPCIONAL
          Crie para cada matéria uma pasta própria, por exemplo:
-         ../assets/materias/2026-09-08-titulo-curto/capa.jpg
+         capa.jpg
          ===================================================== -->
     <figure class="materia-cover">
       <img
-        src="../assets/materias/AAAA-MM-DD-titulo-curto/capa.jpg"
+        src="capa.jpg"
         alt="DESCRIÇÃO DA IMAGEM"
       >
       <figcaption>
@@ -247,7 +246,7 @@
       <!--
       <figure>
         <img
-          src="../assets/materias/AAAA-MM-DD-titulo-curto/foto-01.jpg"
+          src="foto-01.jpg"
           alt="DESCRIÇÃO DA IMAGEM"
           loading="lazy"
         >
@@ -261,7 +260,7 @@
       <!--
       <figure class="wide">
         <img
-          src="../assets/materias/AAAA-MM-DD-titulo-curto/foto-02.jpg"
+          src="foto-02.jpg"
           alt="DESCRIÇÃO DA IMAGEM"
           loading="lazy"
         >
@@ -304,9 +303,9 @@
 
   </main>
 
-  <!-- Rodapé único do portal, gerado por componentes/layout.js -->
+  <!-- Rodapé das matérias, gerado por ../layout-materia.js -->
   <div id="site-footer"></div>
 
-  <script src="../componentes/layout.js"></script>
+  <script src="../layout-materia.js"></script>
 </body>
 </html>
