@@ -44,7 +44,7 @@ const HOME = {
       "titulo": "Pinturas e Platibandas",
       "resumo": "Exibições do documentário de Alberto Renault sobre a fotógrafa Anna Mariani acontecem na Casa 233 e na UFCG, em Campina Grande.",
       "imagem": "assets/home/destaque-01.jpg",
-      "link": "materias/2026-08-08-anna-mariani.html"
+      "link": "materias/2026-08-12-pinturas-platibandas/index.html"
     },
     {
       "categoria": "Música",
