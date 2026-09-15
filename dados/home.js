@@ -69,7 +69,7 @@ const HOME = {
       "resumo": "Evento será realizado de 25 a 27 de setembro no Centro de Convenções de Campina Grande. O primeiro dia terá entrada gratuita para estudantes de instituições públicas.",
       "data": "7 de setembro de 2026",
       "hora": "",
-      "link": "materias/2026-09-07-cultura-local-02.html"
+      "link": "materias/2026-09-07-imagineland/index.html"
     },
     {
       "categoria": "Cinema",
