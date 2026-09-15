@@ -77,7 +77,7 @@ const HOME = {
       "resumo": "Sessões gratuitas acontecem às sextas-feiras, às 19h, com exibição de filmes e debates sobre mito, história e cultura.",
       "data": "7 de setembro de 2026",
       "hora": "",
-      "link": "materias/2026-09-07-cultura-local-03.html"
+      "link": "materias/2026-09-07-mac-cinema-grecia/index.html"
     },
     {
       "categoria": "Cultura popular",
@@ -85,7 +85,7 @@ const HOME = {
       "resumo": "Evento acontece no dia 13 de setembro e reúne o trabalho das loiceiras, artesanato, gastronomia e saberes tradicionais da comunidade.",
       "data": "7 de setembro de 2026",
       "hora": "",
-      "link": "materias/2026-09-07-cultura-local-04.html"
+      "link": "materias/2026-09-07-cha-da-pia/index.html"
     }
   ],
   "em_pauta": [
