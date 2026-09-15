@@ -93,7 +93,7 @@ const HOME = {
       "titulo": "Orquestra Jovem da UFCG se apresenta no MAC",
       "resumo": "Apresentação sob a regência do maestro Luís Passos integrou a programação do XVII FIMUS em Campina Grande.",
       "imagem": "assets/home/pauta-01.jpg",
-      "link": "materias/2026-07-11-orquestra-jovem.html"
+      "link": "materias/2026-07-10-orquestra-jovem/index.html"
     },
     {
       "titulo": "Nélida Campos lança livro em Campina Grande",
