@@ -51,7 +51,7 @@ const HOME = {
       "titulo": "Atração internacional marca a abertura do FIMQ",
       "resumo": "O violonista turco Özberk Miraç Sarıgül e o Grupo Chorata abriram a segunda edição do FIMQ, em Queimadas, reunindo o violão clássico e a tradição do choro paraibano.",
       "imagem": "assets/home/destaque-02.jpg",
-      "link": "materias/2026-08-17-ozberk-mirac.html"
+      "link": "materias/2026-08-17-fimq-ozberk-chorata/index.html"
     }
   ],
   "ultimas": [
