@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDITE ESTES CAMPOS -->
+  <title>Anna Mariani: Anotações Fotográficas | Paraíba ponto Cultural</title>
+  <meta name="description" content="Documentário de Alberto Renault sobre Anna Mariani circulou por Campina Grande com sessões na Casa 233 e na UFCG, recuperando a trajetória da fotógrafa pelo sertão nordestino.">
+
+  <!-- Reaproveita toda a identidade visual da página principal -->
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!--
+    Estilos exclusivos das páginas de matéria.
+    Permanecem aqui para não mexer no styles.css da página principal.
+  -->
+  <style>
+    .materia-page{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 46px 24px 80px;
+    }
+
+    .materia-header{
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    .materia-category{
+      display: inline-block;
+      margin-bottom: 12px;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .80rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .materia-title{
+      margin: 0 0 18px;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(2.4rem, 5vw, 4.7rem);
+      line-height: .98;
+      letter-spacing: -.02em;
+    }
+
+    .materia-summary{
+      max-width: 820px;
+      margin: 0 0 22px;
+      color: #444;
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+      line-height: 1.5;
+    }
+
+    .materia-meta{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+    }
+
+    .materia-cover{
+      margin: 30px auto 38px;
+    }
+
+    .materia-cover img,
+    .materia-body img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .materia-cover figcaption,
+    .materia-body figcaption{
+      margin-top: 8px;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .82rem;
+      line-height: 1.4;
+    }
+
+    .materia-body{
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .materia-body p{
+      margin: 0 0 1.35em;
+    }
+
+    .materia-body h2{
+      margin: 1.8em 0 .65em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.08;
+    }
+
+    .materia-body h3{
+      margin: 1.6em 0 .55em;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.15;
+    }
+
+    .materia-body figure{
+      margin: 32px 0;
+    }
+
+    .materia-body blockquote{
+      margin: 34px 0;
+      padding: 4px 0 4px 22px;
+      border-left: 4px solid #111;
+      font-family: var(--font-head, "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif);
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .materia-body .wide{
+      width: min(980px, calc(100vw - 48px));
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .materia-body .video{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 34px 0;
+      background: #111;
+    }
+
+    .materia-body .video iframe{
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .materia-footer-note{
+      max-width: 760px;
+      margin: 48px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-family: var(--font-ui, "Barlow", Arial, sans-serif);
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px){
+      .materia-page{
+        padding: 32px 18px 60px;
+      }
+
+      .materia-title{
+        font-size: clamp(2.1rem, 12vw, 3.4rem);
+      }
+
+      .materia-body{
+        font-size: 1.02rem;
+      }
+
+      .materia-body .wide{
+        width: calc(100vw - 36px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho das matérias, gerado por ../layout-materia.js -->
+  <div id="site-header"></div>
+
+  <main class="materia-page">
+
+    <!-- =====================================================
+         CABEÇALHO EDITORIAL DA MATÉRIA
+         ===================================================== -->
+    <header class="materia-header">
+      <div class="materia-category">FOTOGRAFIA</div>
+
+      <h1 class="materia-title">
+        Documentário sobre Anna Mariani circula por Campina Grande e revisita sua fotografia do sertão
+      </h1>
+
+      <p class="materia-summary">
+        Exibições de <em>Anna Mariani – Anotações Fotográficas</em>, de Alberto Renault,
+        reuniram público na Casa 233 e na UFCG e recuperaram o percurso da fotógrafa pelas
+        cores, paisagens e arquiteturas populares do Nordeste.
+      </p>
+
+      <div class="materia-meta">
+        <span>Por Carlos Alberto</span>
+        <time datetime="2026-09-15">15 de setembro de 2026</time>
+        <span>Campina Grande, PB</span>
+      </div>
+    </header>
+
+
+    <!-- =====================================================
+         IMAGEM DE ABERTURA — OPCIONAL
+         Crie para cada matéria uma pasta própria, por exemplo:
+         capa.jpg
+         ===================================================== -->
+    <figure class="materia-cover">
+      <img
+        src="platibandas-1.jpg"
+        alt="Exibição do documentário Anna Mariani – Anotações Fotográficas em Campina Grande"
+      >
+      <figcaption>
+        Exibição de <em>Anna Mariani – Anotações Fotográficas</em> em Campina Grande.
+        Foto: Carlos Alberto / Paraíba ponto Cultural
+      </figcaption>
+    </figure>
+
+
+    <!-- =====================================================
+         CORPO DA MATÉRIA
+
+         Esta é a parte livre. Você pode apagar, mover ou duplicar
+         qualquer bloco abaixo. A matéria não precisa sempre começar
+         com foto, nem ter a mesma composição das demais.
+         ===================================================== -->
+    <article class="materia-body">
+
+      <p>
+        As fachadas coloridas de pequenas casas, as platibandas ornamentadas e as paisagens
+        do semiárido atravessaram novamente Campina Grande em agosto. O documentário
+        <em>Anna Mariani – Anotações Fotográficas</em>, dirigido por Alberto Renault, teve
+        sessões na Casa 233 e na Universidade Federal de Campina Grande (UFCG), acompanhadas
+        de conversas com o público sobre a obra e o percurso da fotógrafa.
+      </p>
+
+      <p>
+        O filme recupera os caminhos que levaram Anna Mariani à realização de dois trabalhos
+        de referência de sua produção: <em>Pinturas e Platibandas</em>, publicado originalmente
+        em 1987, e <em>Paisagens, impressões: o semi-árido brasileiro</em>, de 1992. A própria
+        fotógrafa conduz a narrativa, na voz de Regina Casé. Textos de Lina Bo Bardi, Caetano
+        Veloso, Ariano Suassuna e Jean Baudrillard, lidos por Tom Zé, João Miguel e outros
+        participantes, ajudam a contextualizar as imagens e a experiência de Mariani pelo
+        interior nordestino.
+      </p>
+
+      <figure>
+        <img src="platibandas-3.jpg" alt="Impressões em formato de cartão" loading="lazy">
+        <figcaption>
+          Reproduções fotográficas em formato de cartão distribuídas ao público durante a exibição.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <h2>Das fachadas ao sertão</h2>
+
+      <p>
+        Ao longo de sua trajetória, Anna Mariani voltou sua câmera para o sertão e para
+        aspectos da vida e da cultura da região. Em <em>Pinturas e Platibandas</em>, seu olhar
+        se deteve especialmente sobre a arquitetura popular. Fachadas fotografadas frontalmente,
+        muitas vezes marcadas por cores intensas e ornamentos geométricos, formaram um extenso
+        inventário visual produzido em diferentes estados do Nordeste.
+      </p>
+
+      <p>
+        O trabalho reuniu mais de duas mil fotografias e levou para o centro da imagem
+        construções que poderiam passar despercebidas no cotidiano. A própria Mariani reconhecia
+        nessas fachadas manifestações da cultura popular, nas quais tradições, memórias e novas
+        influências se misturavam às escolhas dos moradores e dos mestres responsáveis pelas
+        construções.
+      </p>
+
+      <figure>
+        <img src="platibandas-11.jpg" alt="Augusto Pessoa" loading="lazy">
+        <figcaption>
+          Fotógrafo Augusto Pessoa durante exibição na UFCG/CH.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        A Paraíba está presente nesse percurso. Entre os registros da série encontram-se,
+        por exemplo, fachadas fotografadas em Ingá em 1987. O trabalho alcançou a XIX Bienal
+        Internacional de São Paulo e posteriormente circulou por outros países.
+      </p>
+
+      <p>
+        Já em <em>Paisagens, impressões: o semi-árido brasileiro</em>, o olhar se amplia para
+        o território. Vegetação, chão, animais, luz e transformações da paisagem compõem outro
+        registro do sertão, novamente distante de uma representação exclusivamente marcada
+        pela aridez.
+      </p>
+
+      <figure>
+        <img src="platibandas-13.jpg" alt="Material relacionado a Paisagens, impressões: o semi-árido brasileiro" loading="lazy">
+        <figcaption>
+          Público acompanha o documentário de Alberto Renault.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <h2>Cinema e conversa em Campina Grande</h2>
+
+      <p>
+        A primeira das sessões realizadas em Campina Grande aconteceu em 8 de agosto, na
+        Casa 233, espaço cultural instalado no Centro da cidade. Depois da exibição, o público
+        participou de uma conversa sobre o filme e o trabalho da fotógrafa. Reproduções de
+        imagens de <em>Pinturas e Platibandas</em> e <em>Paisagens, impressões</em> também foram
+        distribuídas aos participantes.
+      </p>
+
+      <p>
+        Na UFCG, o documentário integrou dois dias de programação no Auditório do Centro de
+        Humanidades. Em 10 de agosto, a sessão reuniu o fotógrafo Augusto Pessoa e participantes
+        da Grão Fino Semana de Fotografia, evento promovido pelos cursos de Arte e Mídia da UFCG
+        e Jornalismo da Universidade Estadual da Paraíba (UEPB).
+      </p>
+
+      <figure>
+        <img src="platibandas-12.jpg" alt="Sessão do documentário no Centro de Humanidades da UFCG" loading="lazy">
+        <figcaption>
+          Sessão de <em>Anna Mariani – Anotações Fotográficas</em> no Centro de Humanidades da UFCG.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        No dia seguinte, uma nova sessão foi promovida pelo Cineclube Memorial, Cineclube Timbu
+        e Coordenação Geral de Arte e Cultura da Pró-Reitoria de Extensão da UFCG (PROPEX), com
+        apoio da Grão Fino e da Unidade Acadêmica de Arte e Mídia. Novamente, a projeção foi
+        seguida por debate.
+      </p>
+
+      <p>
+        Augusto Pessoa, Cristina Melo e Pedro Gomides vêm acompanhando a circulação 
+        do documentário, participando das exibições e das conversas com o público sobre o trabalho de Anna Mariani.
+      </p>
+
+      <h2>Fotografias que retornam aos seus territórios</h2>
+
+      <p>
+        As sessões de Campina Grande fazem parte de uma circulação mais ampla de
+        <em>Anna Mariani – Anotações Fotográficas</em> pelo Nordeste. Na Paraíba, o percurso
+        também passou por Areia e seguiu para Taperoá, onde o filme foi apresentado na Casa
+        Museu de Ariano Suassuna. Em outra etapa, o documentário chegou à comunidade quilombola
+        do Terreiro de Maria de Tiê, em Porteiras, no Ceará.
+      </p>
+
+      <figure>
+        <img src="platibandas-4.jpg" alt="Cristina Melo na sessão da UFCG" loading="lazy">
+        <figcaption>
+          Cristina Melo na sessão da UFCG.
+          Foto: Carlos Alberto / Paraíba ponto Cultural
+        </figcaption>
+      </figure>
+
+      <p>
+        Há nessa circulação uma relação particular com a trajetória da fotógrafa. Durante as
+        conversas realizadas em Campina Grande, foi apresentado ao público o propósito de retornar
+        a lugares percorridos por Anna Mariani, procurando casas e pessoas relacionadas aos seus
+        registros e produzindo novos materiais a partir desses reencontros.
+      </p>
+
+      <p>
+        Décadas depois das viagens que deram origem às fotografias, as imagens começam, assim,
+        a fazer também o caminho de volta. As casas, paisagens e comunidades que estiveram diante
+        da câmera de Anna Mariani passam a receber um filme construído a partir daquele olhar —
+        e a participar de uma nova etapa de seu registro.
+      </p>
+
+
+      <h2>Saiba mais</h2>
+
+      <p>
+        Conheça mais sobre a trajetória e a obra de Anna Mariani no
+        <a href="https://ims.com.br/titular-colecao/anna-mariani/" target="_blank" rel="noopener noreferrer">acervo do Instituto Moreira Salles</a>
+        e acompanhe a circulação de <em>Anna Mariani – Anotações Fotográficas</em> pelo
+        <a href="https://www.instagram.com/anna.mariani_sertao.brasil/" target="_blank" rel="noopener noreferrer">perfil do projeto no Instagram</a>.
+      </p>
+
+    </article>
+
+
+    <!-- NOTA FINAL / CRÉDITOS — OPCIONAL -->
+    <div class="materia-footer-note">
+      <p>
+        <strong>Créditos</strong><br>
+        Reportagem e cobertura jornalística: Paraíba ponto Cultural.
+      </p>
+
+      <p>
+        <strong>Direitos e reprodução</strong><br>
+        Os textos e materiais de produção própria desta cobertura podem ser reproduzidos e
+        compartilhados, integral ou parcialmente, desde que preservada sua integridade e sejam
+        indicadas de forma clara a autoria e a fonte original. Fotografias, ilustrações, vídeos
+        e outros conteúdos creditados a terceiros permanecem sujeitos aos direitos de seus
+        respectivos autores.
+      </p>
+
+      <p>
+        <strong>Paraíba ponto Cultural</strong> — projeto editorial do
+        Instituto Vinciano de Artes e Ciências.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Rodapé das matérias, gerado por ../layout-materia.js -->
+  <div id="site-footer"></div>
+
+  <script src="../layout-materia.js"></script>
+</body>
+</html>
