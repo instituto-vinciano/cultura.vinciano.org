@@ -61,7 +61,7 @@ const HOME = {
       "resumo": "Mostras competitivas recebem inscrições gratuitas até 30 de setembro. O Festival acontece de 24 a 29 de novembro, em Campina Grande.",
       "data": "7 de setembro de 2026",
       "hora": "",
-      "link": "materias/2026-09-07-comunicurtas.html"
+      "link": "materias/2026-09-07-comunicurtas/index.html"
     },
     {
       "categoria": "Cultura pop",
