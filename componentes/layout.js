@@ -34,7 +34,7 @@
 
           <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
             <a class="nav-item${onMatter ? "" : " current"}" href="${homeUrl}">Início</a>
-            <a class="nav-item${onMatter ? " current" : ""}" href="${homeUrl}#ultimas">Matérias</a>
+            <a class="nav-item${onMatter ? " current" : ""}" href="${root}materias/index.html">Matérias</a>
 
             <div class="nav-item-wrap">
               <a class="nav-item nav-item-themes" href="${homeUrl}#temas" aria-haspopup="true" aria-expanded="false">

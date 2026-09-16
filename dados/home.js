@@ -105,7 +105,7 @@ const HOME = {
       "titulo": "Cidade Hades no Teatro Municipal Severino Cabral",
       "resumo": "Produção do Teatro Encanto leva ao palco uma adaptação para o português de um musical da Broadway.",
       "imagem": "assets/home/pauta-03.jpg",
-      "link": "materias/2026-07-26-cidade-hades.html"
+      "link": "materias/2026-07-26-cidade-hades/index.html"
     },
     {
       "titulo": "Instituto Vinciano promove circulação do cordel Pulsares: Relógios Cósmicos",

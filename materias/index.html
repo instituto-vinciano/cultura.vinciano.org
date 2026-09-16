@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Todas as matérias publicadas pelo Paraíba ponto Cultural.">
+  <title>Matérias — Paraíba ponto Cultural</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .materias-page{padding-top:34px;padding-bottom:64px}
+    .materias-header{border-bottom:3px solid #111;margin-bottom:28px;padding-bottom:12px}
+    .materias-header h1{margin:0;font-family:"Barlow Semi Condensed","Barlow",sans-serif;font-size:30px;line-height:1;text-transform:uppercase}
+    .materias-list{display:flex;flex-direction:column}
+    .materia-item{display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:24px;padding:22px 0;border-bottom:1px solid #d5d5d5;text-decoration:none;color:inherit}
+    .materia-thumb{aspect-ratio:16/10;overflow:hidden;background:#eee}
+    .materia-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .materia-copy{align-self:center}
+    .materia-meta{margin:0 0 7px;font-family:"Barlow Semi Condensed","Barlow",sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+    .materia-category{color:#b00000}
+    .materia-title{margin:0 0 8px;font-family:"Barlow Semi Condensed","Barlow",sans-serif;font-size:clamp(1.25rem,2.1vw,1.75rem);line-height:1.08}
+    .materia-summary{margin:0;max-width:760px;font-size:.98rem;line-height:1.45}
+    .materias-pagination{display:flex;justify-content:flex-end;padding-top:30px}
+    .materias-pagination a{color:#111;font-family:"Barlow Semi Condensed","Barlow",sans-serif;font-weight:700;text-decoration:none;border-bottom:2px solid #b00000;padding-bottom:3px}
+    @media(max-width:700px){
+      .materias-page{padding-top:22px}
+      .materia-item{grid-template-columns:118px 1fr;gap:14px;padding:16px 0}
+      .materia-title{font-size:1.08rem}
+      .materia-summary{font-size:.88rem;line-height:1.35}
+      .materia-meta{font-size:.7rem}
+    }
+    @media(max-width:460px){
+      .materia-item{grid-template-columns:104px 1fr;gap:12px}
+      .materia-summary{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container materias-page">
+    <header class="materias-header">
+      <h1>Matérias</h1>
+    </header>
+
+    <section class="materias-list" aria-label="Todas as matérias">
+      <a class="materia-item" href="2026-09-07-comunicurtas/index.html">
+        <div class="materia-thumb"><img src="2026-09-07-comunicurtas/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Audiovisual</span> · 7 set. 2026</p>
+          <h2 class="materia-title">Comunicurtas abre inscrições para sua 21ª edição</h2>
+          <p class="materia-summary">Mostras competitivas recebem inscrições até 30 de setembro. O festival acontece de 24 a 29 de novembro, em Campina Grande.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-09-07-imagineland/index.html">
+        <div class="materia-thumb"><img src="2026-09-07-imagineland/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Cultura pop</span> · 7 set. 2026</p>
+          <h2 class="materia-title">Imagineland On the Road retorna a Campina Grande em setembro</h2>
+          <p class="materia-summary">Evento será realizado de 25 a 27 de setembro no Centro de Convenções de Campina Grande. O primeiro dia terá entrada gratuita para estudantes de instituições públicas.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-09-07-mac-cinema-grecia/index.html">
+        <div class="materia-thumb"><img src="2026-09-07-mac-cinema-grecia/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Cinema</span> · 7 set. 2026</p>
+          <h2 class="materia-title">MAC promove ciclo de cinema dedicado à Grécia em setembro</h2>
+          <p class="materia-summary">Sessões gratuitas acontecem às sextas-feiras, às 19h, com exibição de filmes e debates sobre mito, história e cultura.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-09-07-cha-da-pia/index.html">
+        <div class="materia-thumb"><img src="2026-09-07-cha-da-pia/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Cultura popular</span> · 7 set. 2026</p>
+          <h2 class="materia-title">25ª Feira Cultural de Chã da Pia acontece em Areia</h2>
+          <p class="materia-summary">Evento acontece no dia 13 de setembro e reúne o trabalho das loiceiras, artesanato, gastronomia e saberes tradicionais da comunidade.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-09-04-orbis26-natal/index.html">
+        <div class="materia-thumb"><img src="2026-09-04-orbis26-natal/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Instituto Vinciano</span> · 4 set. 2026</p>
+          <h2 class="materia-title">Instituto Vinciano promove circulação do cordel <em>Pulsares: Relógios Cósmicos</em></h2>
+          <p class="materia-summary">Publicação passou pelo Memorial do Cordel, em Guarabira, e pela Estação do Cordel, em Natal, durante ações da Orbis 26.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-08-22-literatura-cordel/index.html">
+        <div class="materia-thumb"><img src="2026-08-22-literatura-cordel/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Literatura</span> · 22 ago. 2026</p>
+          <h2 class="materia-title">Jornada aborda literatura de cordel e xilogravura em Campina Grande</h2>
+          <p class="materia-summary">Realizada na UFCG, a quarta edição do evento reuniu pesquisadores, cordelistas e artistas do Brasil e de Portugal em conferências, mesas-redondas, oficinas, minicursos e grupos de trabalho dedicados à literatura de cordel e à xilogravura.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-08-17-fimq-ozberk-chorata/index.html">
+        <div class="materia-thumb"><img src="2026-08-17-fimq-ozberk-chorata/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Música</span> · 17 ago. 2026</p>
+          <h2 class="materia-title">Violonista turco Özberk Miraç Sarıgül leva trajetória internacional ao FIMQ</h2>
+          <p class="materia-summary">Em sua primeira passagem pelo Brasil, vencedor do Concurso José Tomás Villa de Petrer participou do primeiro ato do Festival Internacional de Música de Queimadas ao lado do Grupo Chorata.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-08-12-pinturas-platibandas/index.html">
+        <div class="materia-thumb"><img src="2026-08-12-pinturas-platibandas/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Fotografia</span> · 12 ago. 2026</p>
+          <h2 class="materia-title">Documentário sobre Anna Mariani circula por Campina Grande e revisita sua fotografia do sertão</h2>
+          <p class="materia-summary">Exibições de <em>Anna Mariani – Anotações Fotográficas</em>, de Alberto Renault, aproximaram o público da obra da fotógrafa e de seu olhar sobre fachadas e platibandas do sertão brasileiro.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-07-26-cidade-hades/index.html">
+        <div class="materia-thumb"><img src="2026-07-26-cidade-hades/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Teatro</span> · 26 jul. 2026</p>
+          <h2 class="materia-title">Cidade Hades leva o mito de Orfeu e Eurídice ao palco do Teatro Severino Cabral</h2>
+          <p class="materia-summary">Espetáculo apresentado em Campina Grande buscou no universo do musical <em>Hadestown</em> uma nova aproximação com uma das mais conhecidas histórias da mitologia grega.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-07-22-nelida-campos/index.html">
+        <div class="materia-thumb"><img src="2026-07-22-nelida-campos/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Literatura</span> · 22 jul. 2026</p>
+          <h2 class="materia-title">Nélida Campos lança <em>O Que Falta é Café</em> em Campina Grande</h2>
+          <p class="materia-summary">Em seu terceiro livro, escritora reúne contos construídos a partir de histórias ouvidas e acontecimentos observados, tendo o café como presença recorrente.</p>
+        </div>
+      </a>
+
+      <a class="materia-item" href="2026-06-10-orquestra-jovem/index.html">
+        <div class="materia-thumb"><img src="2026-06-10-orquestra-jovem/capa.jpg" alt=""></div>
+        <div class="materia-copy">
+          <p class="materia-meta"><span class="materia-category">Música</span> · 10 jun. 2026</p>
+          <h2 class="materia-title">Orquestra Jovem da UFCG se apresenta no MAC</h2>
+          <p class="materia-summary">Apresentação reuniu repertório erudito e popular no Museu de Arte Contemporânea de Campina Grande.</p>
+        </div>
+      </a>
+    </section>
+
+    <nav class="materias-pagination" aria-label="Paginação das matérias">
+      <a href="#">Mais antigas →</a>
+    </nav>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../componentes/layout.js"></script>
+</body>
+</html>
