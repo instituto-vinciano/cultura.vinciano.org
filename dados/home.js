@@ -91,7 +91,7 @@ const HOME = {
   "em_pauta": [
     {
       "titulo": "Orquestra Jovem da UFCG se apresenta no MAC",
-      "resumo": "Apresentação sob a regência do maestro Luís Passos integrou a programação do XVII FIMUS em Campina Grande.",
+      "resumo": "Apresentação sob a regência do maestro Luís Passos abordou do clássico ao popular.",
       "imagem": "assets/home/pauta-01.jpg",
       "link": "materias/2026-06-10-orquestra-jovem/index.html"
     },
@@ -99,7 +99,7 @@ const HOME = {
       "titulo": "Nélida Campos lança livro em Campina Grande",
       "resumo": "Livro de contos da escritora paraibana foi lançado no tradicional Sebo O Cata-Livros na Praça Clementino Procópio.",
       "imagem": "assets/home/pauta-02.jpg",
-      "link": "materias/2026-07-22-nelida-campos.html"
+      "link": "materias/2026-07-22-nelida-campos/index.html"
     },
     {
       "titulo": "Cidade Hades no Teatro Municipal Severino Cabral",
