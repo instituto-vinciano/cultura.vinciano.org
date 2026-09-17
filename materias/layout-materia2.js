@@ -40,10 +40,25 @@
 
           <nav id="primary-nav" class="primary-nav final-nav" aria-label="Navegação principal">
             <a class="nav-item${onMatter ? "" : " current"}" href="${homeUrl}">Início</a>
-            <a class="nav-item${onMatter ? " current" : ""}" href="${root}materias/index.html">Matérias</a>
-            <a class="nav-item" href="${root}bodoque/index.html">Bodoque</a>
-            <a class="nav-item" href="${root}monalisa/index.html">Mona Lisa</a>
-            <a class="nav-item" href="${root}sobre/index.html">Sobre</a>
+            <a class="nav-item${onMatter ? " current" : ""}" href="${homeUrl}#ultimas">Matérias</a>
+
+            <div class="nav-item-wrap">
+              <a class="nav-item nav-item-themes" href="${homeUrl}#temas" aria-haspopup="true" aria-expanded="false">
+                Temas <span class="nav-arrow" aria-hidden="true">⌄</span>
+              </a>
+              <div class="nav-submenu" role="menu">
+                <a href="${homeUrl}#patrimonio" role="menuitem">Patrimônio</a>
+                <a href="${homeUrl}#literatura" role="menuitem">Literatura</a>
+                <a href="${homeUrl}#artes" role="menuitem">Artes</a>
+                <a href="${homeUrl}#audiovisual" role="menuitem">Audiovisual</a>
+                <a href="${homeUrl}#lugares" role="menuitem">Lugares</a>
+                <a href="${homeUrl}#personagens" role="menuitem">Personagens</a>
+              </div>
+            </div>
+
+            <a class="nav-item" href="${homeUrl}#artigos-title">Artigos</a>
+            <a class="nav-item" href="${homeUrl}#codice">Códice</a>
+            <a class="nav-item" href="${homeUrl}#sobre">Sobre</a>
           </nav>
         </div>
       </header>
@@ -63,17 +78,20 @@
             <div>
               <h2>Portal</h2>
               <a href="${homeUrl}">Início</a>
-              <a href="${root}materias/index.html">Matérias</a>
-              <a href="${root}bodoque/index.html">Bodoque</a>
+              <a href="${homeUrl}#ultimas">Matérias</a>
+              <a href="${homeUrl}#artigos-title">Artigos</a>
+              <a href="${homeUrl}#codice">Códice Parahyba</a>
             </div>
             <div>
-              <h2>Publicações</h2>
-              <a href="${root}bodoque/index.html">Bodoque</a>
-              <a href="${root}monalisa/index.html">Mona Lisa</a>
+              <h2>Temas</h2>
+              <a href="${homeUrl}#patrimonio">Patrimônio</a>
+              <a href="${homeUrl}#literatura">Literatura</a>
+              <a href="${homeUrl}#audiovisual">Audiovisual</a>
+              <a href="${homeUrl}#artes">Artes</a>
             </div>
             <div>
               <h2>Institucional</h2>
-              <a href="${root}sobre/index.html">Sobre</a>
+              <a href="${homeUrl}#sobre">Sobre</a>
               <a href="${homeUrl}#contato">Contato</a>
               <a href="https://vinciano.org">Instituto Vinciano</a>
             </div>
@@ -90,6 +108,8 @@
 
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#primary-nav");
+  const themes = document.querySelector(".final-nav .nav-item-themes");
+  const submenu = document.querySelector(".final-nav .nav-submenu");
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
@@ -98,11 +118,23 @@
     });
   }
 
+  if (themes && submenu) {
+    themes.addEventListener("click", (event) => {
+      if (window.matchMedia("(max-width: 900px)").matches) {
+        event.preventDefault();
+        const open = submenu.style.display === "block";
+        submenu.style.display = open ? "none" : "block";
+        themes.setAttribute("aria-expanded", open ? "false" : "true");
+      }
+    });
+  }
 
   window.addEventListener("resize", () => {
     if (!window.matchMedia("(max-width: 900px)").matches) {
       if (nav) nav.classList.remove("open");
+      if (submenu) submenu.style.display = "";
       if (toggle) toggle.setAttribute("aria-expanded", "false");
+      if (themes) themes.setAttribute("aria-expanded", "false");
     }
   });
 })();
