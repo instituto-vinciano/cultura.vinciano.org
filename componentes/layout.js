@@ -68,7 +68,7 @@
             <div>
               <h2>Institucional</h2>
               <a href="${root}sobre/index.html">Sobre</a>
-              <a href="${homeUrl}#contato">Contato</a>
+              <a href="${root}sobre/index.html#contato">Contato</a>
               <a href="https://vinciano.org">Instituto Vinciano</a>
             </div>
           </nav>

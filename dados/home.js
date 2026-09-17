@@ -111,7 +111,7 @@ const HOME = {
       "titulo": "Instituto Vinciano promove circulação do cordel Pulsares: Relógios Cósmicos",
       "resumo": "Publicação passou pelo Memorial do Cordel, em Guarabira, e pela Estação do Cordel, em Natal, durante ações da Orbis 26.",
       "imagem": "assets/home/pauta-04.jpg",
-      "link": "materias/2026-09-07-historias-locais.html"
+      "link": "materias/2026-09-04-orbis26-natal/index.html"
     }
   ]
 };
