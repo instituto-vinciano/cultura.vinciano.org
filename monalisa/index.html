@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mona Lisa é uma revista do Instituto Vinciano dedicada aos encontros entre arte, ciência, cultura e educação.">
+  <title>Mona Lisa — Instituto Vinciano</title>
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .monalisa-page {
+      padding: 42px 0 70px;
+    }
+
+    .monalisa-shell {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .monalisa-hero {
+      padding: 28px 0 46px;
+      border-bottom: 1px solid #d9d4ca;
+    }
+
+    .monalisa-kicker {
+      margin: 0 0 16px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #a72b1d;
+    }
+
+    .monalisa-title {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.6rem, 10vw, 8rem);
+      line-height: 0.9;
+      font-weight: 400;
+      letter-spacing: -0.045em;
+    }
+
+    .monalisa-deck {
+      max-width: 800px;
+      margin: 26px 0 0;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+      line-height: 1.35;
+      font-weight: 500;
+      color: #3b3b3b;
+    }
+
+    .monalisa-content {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(250px, 0.85fr);
+      gap: 64px;
+      padding-top: 44px;
+    }
+
+    .monalisa-text {
+      max-width: 760px;
+    }
+
+    .monalisa-text h2,
+    .monalisa-side h2 {
+      margin: 0 0 16px;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      font-size: 1.65rem;
+      line-height: 1.1;
+    }
+
+    .monalisa-text h2:not(:first-child) {
+      margin-top: 42px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd8cf;
+    }
+
+    .monalisa-text p {
+      margin: 0 0 18px;
+      font-size: 1.06rem;
+      line-height: 1.72;
+      color: #262626;
+    }
+
+    .monalisa-side {
+      align-self: start;
+      border-top: 5px solid #a72b1d;
+      padding-top: 20px;
+    }
+
+    .monalisa-side p {
+      margin: 0 0 14px;
+      line-height: 1.55;
+      color: #444;
+    }
+
+    .monalisa-status {
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: #f2efe8;
+    }
+
+    .monalisa-status strong {
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 780px) {
+      .monalisa-page {
+        padding-top: 24px;
+      }
+
+      .monalisa-shell {
+        width: min(100% - 28px, 1080px);
+      }
+
+      .monalisa-content {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .monalisa-hero {
+        padding: 18px 0 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <main class="monalisa-page">
+    <div class="monalisa-shell">
+      <section class="monalisa-hero" aria-labelledby="monalisa-title">
+        <p class="monalisa-kicker">Arte · Ciência · Cultura · Educação</p>
+        <h1 class="monalisa-title" id="monalisa-title">MONA LISA</h1>
+        <p class="monalisa-deck">
+          Uma revista sobre a curiosidade humana e os encontros entre diferentes
+          formas de conhecimento.
+        </p>
+      </section>
+
+      <div class="monalisa-content">
+        <article class="monalisa-text">
+          <h2>Uma revista sobre a curiosidade humana</h2>
+
+          <p>
+            A <strong>revista Mona Lisa</strong> é uma publicação do Instituto
+            Vinciano dedicada aos encontros entre diferentes formas de
+            conhecimento. Arte, ciência, cultura e educação são tratadas não
+            como territórios isolados, mas como expressões da curiosidade humana
+            e de nossa capacidade de compreender, criar e compartilhar.
+          </p>
+
+          <p>
+            Inspirada no espírito renascentista de Leonardo da Vinci, a revista
+            pretende reunir reportagens, entrevistas, artigos, ensaios e outras
+            produções capazes de cruzar fronteiras entre pesquisa e divulgação,
+            patrimônio e inovação, o local e o global.
+          </p>
+
+          <h2>Conhecimento para permanecer</h2>
+
+          <p>
+            A Mona Lisa nasce também com uma preocupação documental. Cada edição
+            deverá constituir um objeto editorial preservável, reunindo conteúdos
+            concebidos para continuar relevantes além do fluxo imediato das
+            redes sociais e das plataformas digitais.
+          </p>
+
+          <p>
+            A revista não pretende substituir jornais, livros, periódicos
+            acadêmicos ou os ambientes digitais. Sua proposta é estabelecer
+            conexões entre diferentes campos e organizar conteúdos que possam
+            permanecer acessíveis, ser consultados e redescobertos ao longo do
+            tempo.
+          </p>
+
+          <h2>Uma publicação do Instituto Vinciano</h2>
+
+          <p>
+            O Instituto Vinciano é responsável pela publicação e participa de
+            sua produção editorial, mas não constitui o assunto da revista.
+            O protagonismo pertence às pessoas, ideias, pesquisas, obras,
+            iniciativas e experiências apresentadas em suas páginas.
+          </p>
+        </article>
+
+        <aside class="monalisa-side" aria-label="Informações sobre a revista Mona Lisa">
+          <h2>Mona Lisa</h2>
+          <p>
+            Uma publicação do Instituto Vinciano de Artes e Ciências.
+          </p>
+          <p>
+            Reportagens, entrevistas, artigos e ensaios poderão aproximar arte,
+            ciência, cultura e educação em uma mesma publicação editorial.
+          </p>
+
+          <div class="monalisa-status">
+            <strong>Em preparação</strong>
+            <span>A primeira edição da revista Mona Lisa encontra-se em desenvolvimento.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../componentes/layout.js"></script>
+</body>
+</html>

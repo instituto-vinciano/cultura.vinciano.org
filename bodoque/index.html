@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bodoque é o almanaque anual do Paraíba ponto Cultural, dedicado à seleção, organização e preservação editorial de registros culturais produzidos pelo projeto.">
+  <title>Bodoque — Almanaque do Paraíba ponto Cultural</title>
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .bodoque-page {
+      padding: 42px 0 70px;
+    }
+
+    .bodoque-shell {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .bodoque-hero {
+      padding: 18px 0 42px;
+      border-bottom: 1px solid #d9d4ca;
+    }
+
+    .bodoque-logo {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .bodoque-kicker {
+      margin: 38px 0 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #a72b1d;
+    }
+
+    .bodoque-title {
+      margin: 0;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      font-size: clamp(2.3rem, 5vw, 4.6rem);
+      line-height: 0.98;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .bodoque-deck {
+      max-width: 780px;
+      margin: 18px 0 0;
+      font-size: clamp(1.08rem, 2vw, 1.35rem);
+      line-height: 1.45;
+      color: #444;
+    }
+
+    .bodoque-content {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(250px, 0.85fr);
+      gap: 64px;
+      padding-top: 44px;
+    }
+
+    .bodoque-text {
+      max-width: 760px;
+    }
+
+    .bodoque-text h2,
+    .bodoque-side h2 {
+      margin: 0 0 16px;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      font-size: 1.65rem;
+      line-height: 1.1;
+    }
+
+    .bodoque-text h2:not(:first-child) {
+      margin-top: 42px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd8cf;
+    }
+
+    .bodoque-text p {
+      margin: 0 0 18px;
+      font-size: 1.06rem;
+      line-height: 1.72;
+      color: #262626;
+    }
+
+    .bodoque-side {
+      align-self: start;
+      border-top: 5px solid #a72b1d;
+      padding: 20px 0 0;
+    }
+
+    .bodoque-side p {
+      margin: 0 0 14px;
+      line-height: 1.55;
+      color: #444;
+    }
+
+    .bodoque-status {
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: #f2efe8;
+    }
+
+    .bodoque-status strong {
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Barlow Semi Condensed", "Barlow", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 780px) {
+      .bodoque-page {
+        padding-top: 24px;
+      }
+
+      .bodoque-shell {
+        width: min(100% - 28px, 1080px);
+      }
+
+      .bodoque-content {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .bodoque-hero {
+        padding-bottom: 30px;
+      }
+
+      .bodoque-kicker {
+        margin-top: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <main class="bodoque-page">
+    <div class="bodoque-shell">
+      <section class="bodoque-hero" aria-labelledby="bodoque-title">
+        <img
+          class="bodoque-logo"
+          src="bodoque.jpg"
+          alt="Bodoque — Paraíba ponto Cultural"
+        >
+
+        <p class="bodoque-kicker">Almanaque</p>
+        <h1 class="bodoque-title" id="bodoque-title">Bodoque</h1>
+        <p class="bodoque-deck">
+          O almanaque do Paraíba ponto Cultural reúne, organiza e preserva
+          registros da produção cultural acompanhada pelo projeto ao longo do ano.
+        </p>
+      </section>
+
+      <div class="bodoque-content">
+        <article class="bodoque-text">
+          <h2>O almanaque</h2>
+
+          <p>
+            <strong>Bodoque</strong> é uma publicação do Paraíba ponto Cultural,
+            projeto editorial do Instituto Vinciano. Concebido como almanaque,
+            nasce como uma extensão do trabalho desenvolvido pelo PPC em seu
+            ambiente digital.
+          </p>
+
+          <p>
+            Matérias, entrevistas, coberturas, registros fotográficos e outros
+            conteúdos produzidos ao longo do ano poderão ser selecionados,
+            revistos e reorganizados editorialmente para compor cada volume.
+          </p>
+
+          <p>
+            A proposta não é simplesmente reproduzir o portal em outro formato.
+            O Bodoque realiza uma curadoria da produção do Paraíba ponto Cultural,
+            reunindo registros originalmente publicados de forma contínua em um
+            objeto editorial próprio.
+          </p>
+
+          <h2>Do registro à memória</h2>
+
+          <p>
+            O site permanece como espaço de publicação contínua, circulação e
+            acesso individual às matérias. O Bodoque assume outra função:
+            selecionar, organizar, contextualizar e preservar parte dessa
+            produção em uma publicação que possa ser consultada como registro
+            de um período.
+          </p>
+
+          <p>
+            Assim, uma cobertura cultural não precisa encerrar sua existência
+            no momento da publicação. Registros de acontecimentos, pessoas,
+            obras e lugares podem voltar a circular e, reunidos, contribuir
+            para a construção de uma memória cultural organizada.
+          </p>
+
+          <h2>Uma publicação para circular</h2>
+
+          <p>
+            O próprio nome traduz parte desse movimento. O bodoque lança algo
+            para além de seu ponto de origem. No almanaque, essa imagem funciona
+            como metáfora para conteúdos que partem do registro cotidiano,
+            ganham forma editorial e encontram novas possibilidades de
+            circulação e permanência.
+          </p>
+        </article>
+
+        <aside class="bodoque-side" aria-label="Informações sobre o Bodoque">
+          <h2>Bodoque 2026</h2>
+          <p>
+            O primeiro volume reunirá uma seleção da produção do Paraíba ponto
+            Cultural em 2026.
+          </p>
+          <p>
+            Poderão integrar o almanaque matérias culturais, entrevistas,
+            coberturas, perfis, registros de apresentações, ensaios fotográficos
+            e outros conteúdos relacionados à memória cultural paraibana.
+          </p>
+
+          <div class="bodoque-status">
+            <strong>Em preparação</strong>
+            <span>Primeira edição em desenvolvimento.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../componentes/layout.js"></script>
+</body>
+</html>
